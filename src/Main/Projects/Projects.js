@@ -1,10 +1,13 @@
 import React from 'react'
+import Defense from "./Defense"
+import Lake from "./Lake"
+
 
 function Projects() {
     return (
         <div>
-            <h1>projets</h1>
-            
+            <Defense />
+            <Lake />
         </div>
     )
 }

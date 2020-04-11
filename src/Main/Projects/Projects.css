@@ -1,0 +1,28 @@
+.session {
+    padding:2em;
+}
+
+.light-session {
+    background-color: #edf5ef;  
+    color:#2e3b31    
+}
+
+.dark-session {
+    background-color : #2e3b31;
+    color: #edf5ef;
+}
+
+
+
+h1 {
+    font-size:1.5rem;
+    color:#3a9e55;
+}
+
+h2 {
+    font-size:1rem;
+}
+
+p {
+    font-size:0.75rem;
+}

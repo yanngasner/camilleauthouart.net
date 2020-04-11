@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route} from "react-router-dom"
-import Projects from "./Projects"
+import Projects from "./Projects/Projects"
 import Drawings from "./Drawings"
 import Documentaries from "./Documentaries"
 
