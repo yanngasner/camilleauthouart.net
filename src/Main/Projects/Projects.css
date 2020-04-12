@@ -1,3 +1,5 @@
+/* layout */
+
 .project-container {
     padding:2em;
     display : flex;
@@ -6,40 +8,27 @@
 }
 
 .project-text, .project-media {
-    width:45%;
+    width:47%;
 }
 
-.image {
-    width:100%
-}
-
-.image-gallery {
-    width: 100%;
-    height: auto;
-}
-
-.image-gallery-slide img {
-    width: 100%;
-    height: auto;
-    max-height: 80vh;
-    object-fit: cover;
-    overflow: hidden;
-    object-position: center center;
-}
-
-.fullscreen .image-gallery-slide img {
-    max-height: 100vh;
-}
-
-
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
     .project-container {
         flex-direction: column;
     }
     .project-text, .project-media {
-        width:90%
+        width:100%
+    }
+
+    .project-media {
+        order:1;
+    }
+
+    .project-text {
+        order:2;
     }
 }
+
+/* Typography */
 
 .light-project-container {
     background-color: #E7F1F3;  
