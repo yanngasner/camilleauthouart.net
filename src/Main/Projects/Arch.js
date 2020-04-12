@@ -1,12 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 import arch from './resources/arch.jpg'
+import useShowText from '../../Hooks/useShowText'
 
 function Arch() {
 
-    const [expanded, setExpanded] = useState(false);
+    const [showText, showTextLabel, toggleShowText] = useShowText(false);
 
     function paragraph() {
-        return (expanded &&
+        return (showText &&
             <div>
                 <p>Actuellement en développement, ce projet a bénéficié d'une résidence d'écriture à l'Abbaye de Fontevraud,
             obtenu le FAIA du CNC et sera présent aux Pitchs des festivals d'animation de Rennes et d'Annecy 2019</p>
@@ -25,7 +26,7 @@ function Arch() {
                 <h2>La Grande Arche</h2>
                 <h3>La Grande Arche est un projet de court métrage d'animation en 2D traditionnelle et numérique.
                     MIYU Productions 2019</h3>
-                <button className="show-more" onClick={() => setExpanded(prev => !prev)}>{expanded ? "Hide" :"Show more"}</button>
+                <button className="show-more" onClick={toggleShowText}>{showTextLabel}</button>
                 {paragraph()}    
             </div>  
             <div className="project-media">
