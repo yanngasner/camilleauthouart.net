@@ -1,0 +1,38 @@
+.container {
+    padding:2em
+}
+
+
+
+ ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+li {
+    margin: 0 2em;
+
+}
+
+li a {
+    text-decoration: none;
+    color:#1C8296;
+}
+
+li a:hover, li a:focus {
+    color:  #2e3b31;
+}
+
+.active {
+    border-bottom: 1px solid #707070;
+}
+
+.active:hover, .active:focus {
+    color:#1C8296;
+}
+
+
+
+

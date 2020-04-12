@@ -2,8 +2,8 @@ import React from 'react'
 
 function Lake() {
     return (
-        <div className="session dark-session">
-            <h1>Lac</h1>
+        <div className="project-container white-project-container">
+            <h2>Lac</h2>
             <p>A ne pas confondre avec Peur sur le lac!</p>
         </div>
     )

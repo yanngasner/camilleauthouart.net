@@ -1,12 +1,13 @@
 import React from 'react'
-import Defense from "./Defense"
+import Arch from "./Arch"
 import Lake from "./Lake"
+import "./Projects.css"
 
 
 function Projects() {
     return (
         <div>
-            <Defense />
+            <Arch />
             <Lake />
         </div>
     )

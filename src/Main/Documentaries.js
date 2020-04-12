@@ -3,7 +3,7 @@ import React from 'react'
 function Documentaries(props) {
     return (
         <div>
-            <h1>docu</h1>
+            <h2>docu</h2>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 function Drawings() {
     return (
         <div>
-            <h1>dessins</h1>
+            <h2>dessins</h2>
         </div>
     )
 }

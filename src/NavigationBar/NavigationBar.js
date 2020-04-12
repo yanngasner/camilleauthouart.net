@@ -1,13 +1,21 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
+import "./NavigationBar.css" 
 
 function NavigationBar() {
+    
     return (
-        <div>
-           <Link to="/projets">Projets</Link>
-           <Link to="/dessins">Dessins</Link>
-           <Link to="/documentaires">Reportages</Link>
+        <div className="container">
+            <h1>
+                camilleauthouart
+            </h1>
+            <ul>
+                <li><NavLink activeClassName="active" to="/projets">Projets</NavLink></li>
+                <li><NavLink activeClassName="active" to="/documentaires">Reportages</NavLink></li>
+                <li><NavLink activeClassName="active" to="/dessins">Dessins</NavLink></li>
+            </ul>
         </div>
+        
     )
 }
 
