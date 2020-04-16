@@ -23,13 +23,17 @@ img {
 /* Typography */
 
 .App {
-    font-family:'Baloo Paaji 2', 'Roboto'
+    font-family:'Baloo Paaji 2', 'Roboto';
+    --background: #E7F1F3;
+    --yellow: rgb(255,219,106);
+    --green: #1C8296;
+      
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 1000;
-    color: #FED75F;
+    color: var(--yellow);
     text-align: center;
 }
 
@@ -37,6 +41,7 @@ h2 {
     font-size:3rem;
     font-weight: 1000;
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
 h3 {
@@ -49,11 +54,15 @@ button {
     border:none;
     background-color:transparent;
     font: inherit;
-    width:100px
+    width:150px;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 button:hover, button:focus {
     text-decoration: underline;
+    text-underline-position: under;
 }
 
 p, button {

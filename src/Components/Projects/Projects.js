@@ -1,7 +1,7 @@
 import React from 'react'
 import Arch from "./Arch"
 import Lake from "./Lake"
-import "./Projects.css"
+import "../../Styles/Projects.css"
 
 
 function Projects() {

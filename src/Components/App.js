@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import '../Styles/App.css';
 import NavigationBar from './NavigationBar/NavigationBar'
-import Main from './Main/Main'
+import Main from './Main'
 import BottomPage from './BottomPage/BottomPage'
 import {BrowserRouter} from "react-router-dom"
 

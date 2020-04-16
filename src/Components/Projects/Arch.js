@@ -1,5 +1,5 @@
 import React from 'react'
-import arch from './resources/arch.jpg'
+import arch from './resources/arch1.jpg'
 import useShowText from '../../Hooks/useShowText'
 
 function Arch() {
