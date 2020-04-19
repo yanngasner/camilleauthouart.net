@@ -1,0 +1,21 @@
+.slider {
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    height:80%;
+    margin:0;
+    border : 1px solid black;
+}
+
+.capstone {
+    height:150px;
+    border : 1px solid red;
+} 
+
+.slick-slide{ padding:10px;}
+
+
