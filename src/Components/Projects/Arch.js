@@ -1,12 +1,19 @@
-import React from 'react'
-import arch1 from './resources/arch1.jpg'
-import arch2 from './resources/arch2.jpg'
+import React, {useState} from 'react'
+import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
-import ProjectSlider from '../ProjectSlider'
+import ImageSlider from '../ImageSlider/ImageSlider'
 
 function Arch() {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false);
+
+    const [images] = useState(imageProvider('arch'));
+    const [currentImage, setCurrentImage] = useState(images[0]);
+
+    const onSelectionChanged = image => 
+    {
+        setCurrentImage(image);
+    }
 
     function paragraph() {
         return (showText &&
@@ -22,10 +29,6 @@ function Arch() {
             </div>)
     }
 
-    // const images = ["C:\src\camilleauthouart.com\src\Components\Projects\resources\arch2.jpg"]
-    // "C:\src\camilleauthouart.com\src\Components\Projects\resources\arch2.jpg"];
-    const images = [arch1,arch2];
-
     return (
         <div className="project-container light-project-container"> 
             <div className="project-text">
@@ -37,10 +40,10 @@ function Arch() {
             </div>  
             <div className="project-media">
                 <div className="image-container">
-                    <img className="image" src={arch1} alt="Arch"/>
+                    <img className="image" src={currentImage.src} alt="Arch"/>
                 </div>
                 <div className="carousel-container">
-                    <ProjectSlider images={images} className="carousel-container"/>}
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className="carousel-container"/>
                 </div>
             </div> 
         </div> 

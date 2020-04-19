@@ -10,23 +10,24 @@
     box-sizing: border-box;
     width:50%;
     margin:0;
-    padding:40px
+    padding:40px;
 }
 
 .project-media {
-    height:750px
+    height:750px;
 }
 
 .image-container, .carousel-container 
 {
     box-sizing: border-box;
-    height:50%;
     margin:0;
-    border: 1px solid red
 }
 
 .image-container {
     height:75%;
+    display:flex;
+    align-items: center;
+    margin: 0 auto
 }
 
 .carousel-container {
@@ -34,7 +35,8 @@
 }
 
 .image {
-    height:100%;
+    max-height:100%;
+    max-width:100%;
     margin:0 auto   
 }
 
