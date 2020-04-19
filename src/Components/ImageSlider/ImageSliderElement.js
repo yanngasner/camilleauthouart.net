@@ -19,7 +19,11 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
     }
 
     if (focus) {
-        setTimeout(() => {selectedRef.current.focus()}, 10)
+        setTimeout(() => {
+            if (selectedRef && selectedRef.current) {
+                selectedRef.current.focus()
+            }
+        }, 10)
     }
 
     return (

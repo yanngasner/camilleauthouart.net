@@ -1,6 +1,6 @@
 import React from 'react'
 import Arch from "./Arch"
-import Lake from "./Lake"
+import BlindDeads from "./BlindDeads"
 import "../../Styles/Projects.css"
 
 
@@ -8,7 +8,7 @@ function Projects() {
     return (
         <div>
             <Arch />
-            <Lake />
+            <BlindDeads />
         </div>
     )
 }
