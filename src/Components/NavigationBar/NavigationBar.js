@@ -1,18 +1,17 @@
 import React from 'react'
-import {NavLink} from "react-router-dom"
 import "../../Styles/NavigationBar.css" 
 
 function NavigationBar() {
     
     return (
-        <div className="container">
+        <div className="nav-container">
             <h1>
                 camilleauthouart
             </h1>
             <ul>
-                <li><NavLink activeClassName="active" to="/projets">Projets</NavLink></li>
-                <li><NavLink activeClassName="active" to="/documentaires">Reportages</NavLink></li>
-                <li><NavLink activeClassName="active" to="/dessins">Dessins</NavLink></li>
+                <li>La Grande Arche</li>
+                <li>Mort à l'aveugle</li>
+                <li>Lac</li>
             </ul>
         </div>
         

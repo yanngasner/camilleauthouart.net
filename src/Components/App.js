@@ -1,18 +1,18 @@
 import React from 'react';
 import '../Styles/App.css';
+import '../Styles/Projects.css';
 import NavigationBar from './NavigationBar/NavigationBar'
-import Main from './Main'
-import BottomPage from './BottomPage/BottomPage'
-import {BrowserRouter} from "react-router-dom"
+import Arch from "./Projects/Arch"
+import BlindDeads from "./Projects/BlindDeads"
+import Lake from "./Projects/Lake"
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
         <NavigationBar />
-        <Main />
-        <BottomPage />
-      </BrowserRouter>,
+        <Arch />
+        <BlindDeads />
+        <Lake />
     </div>
   );
 }

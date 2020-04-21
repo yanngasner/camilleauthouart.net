@@ -1,37 +1,27 @@
-.container {
+.nav-container {
     padding:2em
 }
 
-
-
- ul {
+ .nav-container ul {
     display: flex;
     list-style: none;
     justify-content: center;
 
 }
 
-li {
+.nav-container li {
     margin: 0 2em;
-
-}
-
-li a {
-    text-decoration: none;
     color: var(--green);
 }
 
-li a:hover, li a:focus {
-    color:  #22462a;
+.nav-container li:hover, .nav-container li:focus {
+    color:var(--green);
 }
 
-.active {
+.nav-container .active {
     border-bottom: 1px solid;
 }
 
-.active:hover, .active:focus {
-    color:var(--green);
-}
 
 
 
