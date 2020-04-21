@@ -7,7 +7,6 @@ import Arch from './Projects/Arch'
 import BlindDeads from './Projects/BlindDeads'
 import Lake from './Projects/Lake'
 
-
 function App() {
 
   const archRef = useRef(null);
@@ -38,7 +37,6 @@ function App() {
   }, [])
 
   const handleScroll = () => {
-
     for (var i = 1; i < 6; i++) {
       const divRef = refs[i - 1]
       if (!(divRef.current && navAreaRef))
@@ -57,22 +55,22 @@ function App() {
     <div className='App'>
       <NavigationBar changeSelection={changeSelection} visible={visible} />
       <div className='nav-area' ref={navAreaRef} />
-      <div tabIndex={1} ref={archRef}>
+      <div ref={archRef}>
         <Arch index={1} divRef={archRef} />
       </div>
-      <div tabIndex={2} ref={blindDeadsRef}>
+      <div ref={blindDeadsRef}>
         <BlindDeads index={2} divRef={blindDeadsRef} />
       </div>
-      <div tabIndex={3} ref={lakeRef}>
+      <div ref={lakeRef}>
         <Lake index={3} divRef={lakeRef} />
       </div>
-      <div tabIndex={4} ref={archRef2}>
+      <div ref={archRef2}>
         <Arch index={4} divRef={archRef2} />
       </div>
-      <div tabIndex={5} ref={blindDeadsRef2}>
+      <div ref={blindDeadsRef2}>
         <BlindDeads index={5} divRef={blindDeadsRef2} />
       </div>
-      <div tabIndex={6} ref={lakeRef2}>
+      <div ref={lakeRef2}>
         <Lake index={6} divRef={lakeRef2} />
       </div>
     </div>

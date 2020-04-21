@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import './ImageSlider.css'
 
 function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
@@ -7,7 +7,22 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
     
     const onClick = () => {
         onSelected(image)
+        if (focus) {
+            setTimeout(() => {
+                if (selectedRef && selectedRef.current) {
+                    selectedRef.current.focus()
+                }
+            }, 10)
+        }
     }
+
+    useEffect(() => {
+        if (focus) {
+            if (selectedRef && selectedRef.current) {
+                selectedRef.current.focus()
+            }
+        }
+    }, [focus])
 
     const onKeyDown = (e) => {
         if (e.key === 'ArrowRight') {
@@ -18,13 +33,7 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
         }
     }
 
-    if (focus) {
-        setTimeout(() => {
-            if (selectedRef && selectedRef.current) {
-                selectedRef.current.focus()
-            }
-        }, 10)
-    }
+    
 
     return (
         <div className='slider-image-container'>
