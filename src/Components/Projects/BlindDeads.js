@@ -4,7 +4,7 @@ import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
 import ReactPlayer from 'react-player'
 
-function BlindDeads() {
+function BlindDeads({ index, divRef }) {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
 

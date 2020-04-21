@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import '../Styles/App.css'
 import '../Styles/Projects.css'
 import NavigationBar from './NavigationBar/NavigationBar'
@@ -7,15 +7,74 @@ import Arch from './Projects/Arch'
 import BlindDeads from './Projects/BlindDeads'
 import Lake from './Projects/Lake'
 
+
 function App() {
+
+  const archRef = useRef(null);
+  const blindDeadsRef = useRef(null);
+  const lakeRef = useRef(null);
+  const archRef2 = useRef(null);
+  const blindDeadsRef2 = useRef(null);
+  const lakeRef2 = useRef(null);
+  const navAreaRef = useRef(null);
+
+  const refs = [archRef, blindDeadsRef, lakeRef, archRef2, blindDeadsRef2, lakeRef2]
+  const [visible, setVisible] = useState(1);
+
+  const changeSelection = id => {
+    if (refs[id - 1].current && navAreaRef) {
+      var offsetTop = refs[id - 1].current.offsetTop;
+      offsetTop = offsetTop - navAreaRef.current.offsetTop - navAreaRef.current.offsetHeight;
+      window.scroll({ top: offsetTop, behavior: "smooth" });
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
+
+  const handleScroll = () => {
+
+    for (var i = 1; i < 6; i++) {
+      const divRef = refs[i - 1]
+      if (!(divRef.current && navAreaRef))
+        return
+      var divMiddle = divRef.current.offsetTop + divRef.current.offsetHeight / 2;
+      divMiddle = divMiddle - navAreaRef.current.offsetTop - navAreaRef.current.offsetHeight;
+      if (window.scrollY <= divMiddle) {
+        setVisible(i)
+        return
+      }
+    }
+    setVisible(6)
+  }
 
   return (
     <div className='App'>
-      <NavigationBar/>
-      <div className='nav-area'/>
-      <Arch />
-      <BlindDeads />
-      <Lake />
+      <NavigationBar changeSelection={changeSelection} visible={visible} />
+      <div className='nav-area' ref={navAreaRef} />
+      <div tabIndex={1} ref={archRef}>
+        <Arch index={1} divRef={archRef} />
+      </div>
+      <div tabIndex={2} ref={blindDeadsRef}>
+        <BlindDeads index={2} divRef={blindDeadsRef} />
+      </div>
+      <div tabIndex={3} ref={lakeRef}>
+        <Lake index={3} divRef={lakeRef} />
+      </div>
+      <div tabIndex={4} ref={archRef2}>
+        <Arch index={4} divRef={archRef2} />
+      </div>
+      <div tabIndex={5} ref={blindDeadsRef2}>
+        <BlindDeads index={5} divRef={blindDeadsRef2} />
+      </div>
+      <div tabIndex={6} ref={lakeRef2}>
+        <Lake index={6} divRef={lakeRef2} />
+      </div>
     </div>
   );
 }

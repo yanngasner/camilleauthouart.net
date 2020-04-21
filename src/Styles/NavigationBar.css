@@ -16,17 +16,21 @@
     justify-content: center;
 }
 
-.nav-container li {
+.nav-element button {
     margin: 0 2em;
     color: var(--green);
+    width:150px;
+    font-weight:bold;
+    text-align: center;
 }
 
-.nav-container li:hover, .nav-container li:focus {
-    color:var(--green);
+.nav-element button:hover, .nav-element  button:focus {
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
-.nav-container .active {
-    border-bottom: 1px solid;
+.nav-element-active button {
+    color: var(--yellow)
 }
 
 

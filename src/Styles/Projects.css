@@ -73,10 +73,18 @@
 
 .white-project-container {
     background-color : white;
-    color:rgba(0,0,0, 0.8)  
+    color:rgba(0,0,0, 0.8);  
 }
 
 .white-project-container h2, 
 .white-project-container button {
     color: var(--yellow);
+}
+
+.project-text button {
+    width:150px;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin:0.5em auto;
+    text-align: left;
 }

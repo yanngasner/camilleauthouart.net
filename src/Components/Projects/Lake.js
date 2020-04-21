@@ -3,7 +3,7 @@ import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
 
-function Lake() {
+function Lake({ index, divRef }) {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
 
