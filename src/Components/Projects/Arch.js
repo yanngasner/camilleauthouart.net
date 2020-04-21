@@ -3,16 +3,13 @@ import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
 
-function Arch({ index, divRef }) {
+function Arch() {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
-
     const [images] = useState(imageProvider('arch'))
     const [currentImage, setCurrentImage] = useState(images[0])    
 
-    const onSelectionChanged = image => {
-        setCurrentImage(image)
-    }
+    const onSelectionChanged = image => setCurrentImage(image)
 
     function paragraph() {
         return (showText &&

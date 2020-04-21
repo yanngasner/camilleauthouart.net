@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react'
 import '../../Styles/NavigationBar.css'
 import NavigationButton from './NavigationButton'
 
-function NavigationBar({ changeSelection, visible }) {
+function NavigationBar({ onSelectedComponentChanged, activeComponentId }) {
 
-    const [activeId, setActiveId] = useState(1)
+    const [focusedButtonId, setFocusedButtonId] = useState(1)
 
     const onClick = id => {
-        setActiveId(id)
-        changeSelection(id)
+        setFocusedButtonId(id)
+        onSelectedComponentChanged(id)
     }
 
     useEffect(() => {
-        setActiveId(visible)
-    }, [visible])
+        setFocusedButtonId(activeComponentId)
+    }, [activeComponentId])
 
 
     return (
@@ -22,12 +22,12 @@ function NavigationBar({ changeSelection, visible }) {
                 camilleauthouart
             </h1>
             <ul>
-                <li><NavigationButton id={1} isActive={activeId === 1} text="La Grande Arche" onClick={onClick} /></li>
-                <li><NavigationButton id={2} isActive={activeId === 2} text="Morts à l'Aveugle" onClick={onClick} /></li>
-                <li><NavigationButton id={3} isActive={activeId === 3} text="Lac" onClick={onClick} /></li>
-                <li><NavigationButton id={4} isActive={activeId === 4} text="La Grande Arche" onClick={onClick} /></li>
-                <li><NavigationButton id={5} isActive={activeId === 5} text="Morts à l'Aveugle" onClick={onClick} /></li>
-                <li><NavigationButton id={6} isActive={activeId === 6} text="Lac" onClick={onClick} /></li>
+                <li><NavigationButton id={1} isActive={focusedButtonId === 1} text="La Grande Arche" onClick={onClick} /></li>
+                <li><NavigationButton id={2} isActive={focusedButtonId === 2} text="Morts à l'Aveugle" onClick={onClick} /></li>
+                <li><NavigationButton id={3} isActive={focusedButtonId === 3} text="Lac" onClick={onClick} /></li>
+                <li><NavigationButton id={4} isActive={focusedButtonId === 4} text="La Grande Arche" onClick={onClick} /></li>
+                <li><NavigationButton id={5} isActive={focusedButtonId === 5} text="Morts à l'Aveugle" onClick={onClick} /></li>
+                <li><NavigationButton id={6} isActive={focusedButtonId === 6} text="Lac" onClick={onClick} /></li>
             </ul>
         </div>
 

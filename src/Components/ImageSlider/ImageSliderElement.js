@@ -33,8 +33,6 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
         }
     }
 
-    
-
     return (
         <div className='slider-image-container'>
             <img ref={selectedRef} className='slider-image' src={image.src} alt={`slide ${image.index}`}

@@ -3,17 +3,13 @@ import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
 
-function Lake({ index, divRef }) {
+function Lake() {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
-
     const [images] = useState(imageProvider('lake'))
     const [currentImage, setCurrentImage] = useState(images[0])
 
-    const onSelectionChanged = image => 
-    {
-        setCurrentImage(image)
-    }
+    const onSelectionChanged = image => setCurrentImage(image)
 
     function paragraph() {
         return (showText &&

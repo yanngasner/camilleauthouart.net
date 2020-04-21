@@ -4,17 +4,13 @@ import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
 import ReactPlayer from 'react-player'
 
-function BlindDeads({ index, divRef }) {
+function BlindDeads() {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
-
     const [images] = useState(imageProvider('blindDeads'))
-    const [currentImage, setCurrentImage] = useState(images[0])
+    const [currentImage, setCurrentImage] = useState(images[0])    
 
-    const onSelectionChanged = image => 
-    {
-        setCurrentImage(image)
-    }
+    const onSelectionChanged = image => setCurrentImage(image)
 
     function paragraph() {
         return (showText &&
