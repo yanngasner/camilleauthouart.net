@@ -7,7 +7,13 @@
     max-width: 1200px;
     width:100%;
     margin: 0 auto;
+    --nav-height:250px
 }
+
+.nav-area {
+    height: var(--nav-height);
+}
+
 
 @media (max-width: 1250px) {
     .App {
@@ -26,7 +32,6 @@ img {
     --background: #E7F1F3;
     --yellow: rgb(255,219,106);
     --green: #1C8296;
-      
 }
 
 h1 {

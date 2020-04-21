@@ -1,12 +1,19 @@
 .nav-container {
-    padding:2em
+    padding:2em;
+    background-color:white;
+    height: var---nav-height;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
  .nav-container ul {
     display: flex;
     list-style: none;
     justify-content: center;
-
 }
 
 .nav-container li {
