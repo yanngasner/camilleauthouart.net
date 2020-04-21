@@ -5,14 +5,14 @@ import ImageSlider from '../ImageSlider/ImageSlider'
 
 function Arch() {
 
-    const [showText, showTextLabel, toggleShowText] = useShowText(false);
+    const [showText, showTextLabel, toggleShowText] = useShowText(false)
 
-    const [images] = useState(imageProvider('arch'));
-    const [currentImage, setCurrentImage] = useState(images[0]);
+    const [images] = useState(imageProvider('arch'))
+    const [currentImage, setCurrentImage] = useState(images[0])
 
     const onSelectionChanged = image => 
     {
-        setCurrentImage(image);
+        setCurrentImage(image)
     }
 
     function paragraph() {
@@ -30,20 +30,20 @@ function Arch() {
     }
 
     return (
-        <div className="project-container light-project-container"> 
-            <div className="project-text">
+        <div className='project-container light-project-container'> 
+            <div className='project-text'>
                 <h2>La Grande Arche</h2>
                 <h3>La Grande Arche est un projet de court métrage d'animation en 2D traditionnelle et numérique.
                     MIYU Productions 2019</h3>
-                <button className="show-more" onClick={toggleShowText}>{showTextLabel}</button>
+                <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>
                 {paragraph()}    
             </div>  
-            <div className="project-media">
-                <div className="image-container">
-                    <img className="image" src={currentImage.src} alt="Arch"/>
+            <div className='project-media'>
+                <div className='image-container'>
+                    <img className='image' src={currentImage.src} alt={`La Grande Arche ${currentImage.index}`}/>
                 </div>
-                <div className="carousel-container">
-                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className="carousel-container"/>
+                <div className='carousel-container'>
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container'/>
                 </div>
             </div> 
         </div> 

@@ -1,6 +1,6 @@
-import React from 'react';
-import '../Styles/App.css';
-import '../Styles/Projects.css';
+import React from 'react'
+import '../Styles/App.css'
+import '../Styles/Projects.css'
 import NavigationBar from './NavigationBar/NavigationBar'
 
 import Arch from './Projects/Arch'
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
