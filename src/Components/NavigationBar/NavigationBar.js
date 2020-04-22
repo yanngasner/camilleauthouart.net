@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import '../../Styles/NavigationBar.css'
+import './NavigationBar.css'
 import NavigationButton from './NavigationButton'
 
 function NavigationBar({ onSelectedComponentChanged, activeComponentId }) {
@@ -18,9 +18,11 @@ function NavigationBar({ onSelectedComponentChanged, activeComponentId }) {
 
     return (
         <div className='nav-container'>
-            <h1>
+            
+            {/* <div className='title-container'>
                 camilleauthouart
-            </h1>
+            </div> */}
+
             <ul>
                 <li><NavigationButton id={1} isActive={focusedButtonId === 1} text="La Grande Arche" onClick={onClick} /></li>
                 <li><NavigationButton id={2} isActive={focusedButtonId === 2} text="Morts à l'Aveugle" onClick={onClick} /></li>

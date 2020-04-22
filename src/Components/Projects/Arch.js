@@ -36,11 +36,13 @@ function Arch() {
                     {paragraph()}
                 </div>
                 <div className='project-media'>
-                    <div className='image-container'>
-                        <img className='image' src={currentImage.src} alt={`La Grande Arche ${currentImage.index}`} />
-                    </div>
-                    <div className='carousel-container'>
-                        <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container' />
+                    <div className='inner-project-media'>
+                        <div className='image-container'>
+                            <img src={currentImage.src} alt={`La Grande Arche ${currentImage.index}`} />
+                        </div>
+                        <div className='carousel-container'>
+                           <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container' />
+                        </div>
                     </div>
                 </div>
             </div>
