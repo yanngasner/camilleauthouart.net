@@ -27,7 +27,7 @@ function Crocodiles() {
                 <div className='project-media'>
                     <div className='inner-project-media'>
                         <div className='image-container'>
-                            <img src={currentImage.src} alt={`La Grande Arche ${currentImage.index}`} />
+                            <img src={currentImage.src} alt={`Crocodiles ${currentImage.index}`} />
                         </div>
                         <div className='carousel-container'>
                             <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container' />

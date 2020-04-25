@@ -8,7 +8,8 @@ function useActiveComponent(activeComponentsCount) {
     const ref3 = useRef(null)
     const ref4 = useRef(null)
     const ref5 = useRef(null)
-    const componentsRef = [ref0, ref1, ref2, ref3, ref4, ref5]
+    const ref6 = useRef(null)
+    const componentsRef = [ref0, ref1, ref2, ref3, ref4, ref5, ref6]
     // const getComponentsRef = () => {
         //cannot useRef in a loop, fixed implem for 6 components
         //fixed for 5 components

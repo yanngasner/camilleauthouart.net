@@ -23,7 +23,11 @@ import crocodiles3 from './../resources/crocodiles3.jpg'
 import crocodiles4 from './../resources/crocodiles4.jpg'
 import crocodiles5 from './../resources/crocodiles5.jpg'
 import crocodiles6 from './../resources/crocodiles6.jpg'
-
+import africanRhymes1 from './../resources/africanRhymes1.jpg'
+import africanRhymes2 from './../resources/africanRhymes2.jpg'
+import africanRhymes3 from './../resources/africanRhymes3.jpg'
+import africanRhymes4 from './../resources/africanRhymes4.jpg'
+import africanRhymes5 from './../resources/africanRhymes5.jpg'
 
 const archImages = [
     { index: 1, src: arch1, title: 'arch1', description: '' },
@@ -62,6 +66,15 @@ const crocodilesImages = [
     { index: 6, src: crocodiles6, title: 'crocodiles6', description: '' },
 ];
 
+const africanRhymesImages = [
+    { index: 1, src: africanRhymes1, title: 'africanRhymes1', description: '', url: 'https://www.youtube.com/watch?v=lq8bH9YbftU' },
+    { index: 2, src: africanRhymes2, title: 'africanRhymes2', description: '', url: 'https://www.youtube.com/watch?v=wLZfh7eSPVY' },
+    { index: 3, src: africanRhymes3, title: 'africanRhymes3', description: '', url: 'https://www.youtube.com/watch?v=Fm-nqlO98tg' },
+    { index: 4, src: africanRhymes4, title: 'africanRhymes4', description: '', url: 'https://www.youtube.com/watch?v=PsQqYLw9Bt8' },
+    { index: 5, src: africanRhymes5, title: 'africanRhymes5', description: '', url: 'https://www.youtube.com/watch?v=NgmywN8GTic' },
+]
+
+
 const imageProvider = 
 (project) => {
     switch(project) {
@@ -73,6 +86,8 @@ const imageProvider =
             return lakeImages
         case 'crocodiles' :
             return crocodilesImages
+        case 'africanRhymes' :
+            return africanRhymesImages
         default :
         return null
     }
