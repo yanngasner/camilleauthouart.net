@@ -40,14 +40,14 @@ img {
 
 h1 {
     font-size: 3rem;
-    font-weight: 1000;
+    font-weight: 900;
     color: var(--yellow);
     text-align: center;
 }
 
 h2 {
     font-size:3rem;
-    font-weight: 1000;
+    font-weight: 900;
     margin: 0 auto;
     text-transform: capitalize;
 }

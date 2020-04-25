@@ -6,14 +6,27 @@
     left: 0;
     right: 0;
     z-index: 1;
+    display:flex;
+    width: 90%;
+    margin:0 auto
+}
 
+.title-container {
+    width: 20%;
+    margin: auto
+}
+
+.title-container h1 {
+    line-height:1em;
 }
 
  .nav-container ul {
     display: flex;
     list-style: none;
     justify-content: center;
-}
+     width: 80%;
+     margin: auto;
+ }
 
 .nav-element button {
     margin: 0 2em;
