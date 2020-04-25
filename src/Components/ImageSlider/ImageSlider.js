@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import './ImageSlider.css'
 import ImageSliderElement from './ImageSliderElement'
 
@@ -17,7 +17,7 @@ function ImageSlider({images, currentImage, onSelectionChanged}) {
     const handleSelectionChanged = image => {
         onSelectionChanged(image)
         setShouldFocus(true)
-        setTimeout(() => setShouldFocus(false, 10))
+        setTimeout(() => setShouldFocus(false), 10)
     }
 
     const previousImage = images[(currentImage.index + images.length - 2) % images.length]

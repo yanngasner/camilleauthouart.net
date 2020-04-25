@@ -5,11 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "edge",
+            "request": "attach",
+            "name": "Attach to Edge",
+            "port": 3000,
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Edge",
+            "type": "edge",
+            "request": "launch",
+            "url": "http://localhost:3000/",
+            "webRoot": "${workspaceRoot}/src/",
+            "sourceMaps": true,
+            "diagnosticLogging": true
         }
     ]
 }

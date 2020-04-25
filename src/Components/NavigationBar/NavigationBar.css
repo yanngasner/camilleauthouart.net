@@ -1,8 +1,6 @@
 .nav-container {
-    padding:2em;
     background-color:white;
-    height: var---nav-height;
-    box-sizing: border-box;
+    height: calc(var(--nav-height) + 8px) ;
     position: fixed;
     top: 0;
     left: 0;

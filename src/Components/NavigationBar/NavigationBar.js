@@ -14,14 +14,14 @@ function NavigationBar({ onSelectedComponentChanged, activeComponentId }) {
     useEffect(() => {
         setFocusedButtonId(activeComponentId)
     }, [activeComponentId])
-
+ 
 
     return (
         <div className='nav-container'>
             
-            {/* <div className='title-container'>
+             <div className='title-container'>
                 camilleauthouart
-            </div> */}
+            </div>
 
             <ul>
                 <li><NavigationButton id={1} isActive={focusedButtonId === 1} text="La Grande Arche" onClick={onClick} /></li>

@@ -22,7 +22,7 @@ function useActiveComponent(activeComponentsCount) {
 
     //provides the offset of the sticky navbar;
     const getNavOffset = () => componentsRef[0].current
-        ? componentsRef[0].current.offsetTop + componentsRef[0].current.offsetHeight
+        ? componentsRef[0].current.offsetHeight + componentsRef[0].current.offsetTop
         : 0
 
     //autoscroll to the selected component div

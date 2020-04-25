@@ -27,10 +27,10 @@ function BlindDeads() {
                 <div className='inner-project-media'>
                     {currentImage.url ?
                         <div className='video-container'>
-                            <ResponsivePlayer url={currentImage.url} /> :
+                            <ResponsivePlayer url={currentImage.url} />
                         </div> :
                         <div className='image-container'>
-                            <img src={currentImage.src} alt={`Morts à l'Aveugle ${currentImage.index}`} />}
+                            <img src={currentImage.src} alt={`Morts à l'Aveugle ${currentImage.index}`} />
                         </div>
                     }
                     <div className='carousel-container'>

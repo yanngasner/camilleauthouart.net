@@ -13,6 +13,7 @@
 .nav-area {
     height: var(--nav-height);
     box-sizing: border-box;
+    margin: 0 auto
 }
 
 
@@ -31,7 +32,7 @@ img {
 /* Typography */
 
 .App {
-    font-family:'Baloo Paaji 2', 'Roboto';
+    font-family:'Baloo Paaji 2', 'Calibri';
     --background: #E7F1F3;
     --yellow: rgb(255,219,106);
     --green: #1C8296;
