@@ -17,6 +17,12 @@ import lake6 from './../resources/lake6.jpg'
 import lake7 from './../resources/lake7.jpg'
 import lake8 from './../resources/lake8.jpg'
 import lake9 from './../resources/lake9.jpg'
+import crocodiles1 from './../resources/crocodiles1.jpg'
+import crocodiles2 from './../resources/crocodiles2.jpg'
+import crocodiles3 from './../resources/crocodiles3.jpg'
+import crocodiles4 from './../resources/crocodiles4.jpg'
+import crocodiles5 from './../resources/crocodiles5.jpg'
+import crocodiles6 from './../resources/crocodiles6.jpg'
 
 
 const archImages = [
@@ -47,6 +53,15 @@ const archImages = [
     { index: 9, src: lake9, title: 'lake9', description: '' },
   ];
 
+const crocodilesImages = [
+    { index: 1, src: crocodiles1, title: 'crocodiles1', description: '' },
+    { index: 2, src: crocodiles2, title: 'crocodiles2', description: '' },
+    { index: 3, src: crocodiles3, title: 'crocodiles3', description: '' },
+    { index: 4, src: crocodiles4, title: 'crocodiles4', description: '' },
+    { index: 5, src: crocodiles5, title: 'crocodiles5', description: '' },
+    { index: 6, src: crocodiles6, title: 'crocodiles6', description: '' },
+];
+
 const imageProvider = 
 (project) => {
     switch(project) {
@@ -56,6 +71,8 @@ const imageProvider =
         return blindDeadsImages
         case 'lake' :
             return lakeImages
+        case 'crocodiles' :
+            return crocodilesImages
         default :
         return null
     }

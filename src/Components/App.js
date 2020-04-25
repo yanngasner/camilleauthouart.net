@@ -6,6 +6,7 @@ import NavigationBar from './NavigationBar/NavigationBar'
 import Arch from './Projects/Arch'
 import BlindDeads from './Projects/BlindDeads'
 import Lake from './Projects/Lake'
+import Crocodiles from "./Projects/Crocodiles";
 import useActiveComponent from '../Hooks/useActiveComponent'
 
 function App() {
@@ -26,12 +27,9 @@ function App() {
         <Lake />
       </div>
       <div ref={componentRefs[4]}>
-        <Arch />
+        <Crocodiles />
       </div>
       <div ref={componentRefs[5]}>
-        <BlindDeads />
-      </div>
-      <div ref={componentRefs[6]}>
         <Lake />
       </div>
     </div>
