@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import './ImageSlider.css'
 import ImageSliderElement from './ImageSliderElement'
+import arrowGreenLeft from './../../resources/arrow-left-green.png'
+import arrowGreenRight from './../../resources/arrow-right-green.png'
+import arrowYellowLeft from './../../resources/arrow-left-yellow.png'
+import arrowYellowRight from './../../resources/arrow-right-yellow.png'
 
 
-function ImageSlider({images, currentImage, onSelectionChanged}) {
+function ImageSlider({images, currentImage, onSelectionChanged, invertedProject}) {
 
     const [shouldFocus, setShouldFocus] = useState(false);
 
@@ -27,11 +31,18 @@ function ImageSlider({images, currentImage, onSelectionChanged}) {
 
     return (
         <div className='slider-container'>
-            <ImageSliderElement image={minus2Image} onSelected={onSelected} onNextSelected={onNextSelected} />
-            <ImageSliderElement image={minus1Image} onSelected={onSelected} onNextSelected={onNextSelected} />
-            <ImageSliderElement image={currentImage} focus={shouldFocus} onSelected={onSelected} onNextSelected={onNextSelected} />
-            <ImageSliderElement image={plus1Image} onSelected={onSelected} onNextSelected={onNextSelected} />
-            <ImageSliderElement image={plus2Image} onSelected={onSelected} onNextSelected={onNextSelected} />
+            <button className='arrow-container blue-arrow-container' onClick={() => onNextSelected(-1)}>
+                <img src={invertedProject ? arrowYellowLeft : arrowGreenLeft}/>
+            </button>
+            <ImageSliderElement image={minus2Image} onSelected={onSelected} onNextSelected={onNextSelected}/>
+            <ImageSliderElement image={minus1Image} onSelected={onSelected} onNextSelected={onNextSelected}/>
+            <ImageSliderElement image={currentImage} focus={shouldFocus} onSelected={onSelected}
+                                onNextSelected={onNextSelected}/>
+            <ImageSliderElement image={plus1Image} onSelected={onSelected} onNextSelected={onNextSelected}/>
+            <ImageSliderElement image={plus2Image} onSelected={onSelected} onNextSelected={onNextSelected}/>
+            <button className='arrow-container yellow-arrow-container' onClick={() => onNextSelected(1)}>
+                <img src={invertedProject ? arrowYellowRight : arrowGreenRight}/>
+            </button>
         </div>
     )
 }
