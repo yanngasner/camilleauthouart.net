@@ -23,7 +23,7 @@ img {
 .project-container {
     display : flex;
     justify-content: space-between;
-    padding:2.5% 5%;
+    padding:5% 5%;
 }
 
 .project-text {

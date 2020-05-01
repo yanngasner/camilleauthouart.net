@@ -21,6 +21,17 @@ import africanRhymes4 from './../resources/africanRhymes4.jpg'
 import africanRhymes5 from './../resources/africanRhymes5.jpg'
 import worryBirds1 from './../resources/worryBirds1.jpg'
 import agnesMelody1 from './../resources/agnesMelody1.jpg'
+import europeForReal1 from './../resources/europeForReal1.jpg'
+import postIt1 from './../resources/postIt1.jpg'
+import postIt2 from './../resources/postIt2.jpg'
+import postIt3 from './../resources/postIt3.jpg'
+import postIt4 from './../resources/postIt4.jpg'
+import postIt5 from './../resources/postIt5.jpg'
+import postIt6 from './../resources/postIt6.jpg'
+import postIt7 from './../resources/postIt7.jpg'
+import postIt8 from './../resources/postIt8.jpg'
+import postIt9 from './../resources/postIt9.jpg'
+import theHub1 from './../resources/theHub1.jpg'
 
 const archImages = [
     { index: 1, src: arch1, title: 'arch1', description: '' },
@@ -63,6 +74,26 @@ const agnesMelodyImages = [
     { index: 1, src: agnesMelody1, title: 'agnesMelody1', description: '', url: 'https://vimeo.com/172420408' },
 ]
 
+const europeForRealImages = [
+    { index: 1, src: europeForReal1, title: 'europeForReal1', description: '', url: 'https://www.youtube.com/watch?v=eVNfFt_cssk' },
+]
+
+const theHubImages = [
+    { index: 1, src: theHub1, title: 'theHub1', description: '', url: 'https://www.youtube.com/watch?v=n6J_AQEbFcM' },
+]
+
+const postItImages = [
+    { index: 1, src: postIt1, title: 'postIt1', description: '', url: 'https://vimeo.com/188803957' },
+    { index: 2, src: postIt2, title: 'postIt2', description: '', url: 'https://vimeo.com/172425375' },
+    { index: 3, src: postIt3, title: 'postIt3', description: '' },
+    { index: 4, src: postIt4, title: 'postIt4', description: '' },
+    { index: 5, src: postIt5, title: 'postIt5', description: '' },
+    { index: 6, src: postIt6, title: 'postIt6', description: '' },
+    { index: 7, src: postIt7, title: 'postIt7', description: '' },
+    { index: 8, src: postIt8, title: 'postIt8', description: '' },
+    { index: 9, src: postIt9, title: 'postIt9', description: '' },
+]
+
 const imageProvider =
 (project) => {
     switch(project) {
@@ -78,6 +109,12 @@ const imageProvider =
             return worryBirdsImages
         case 'agnesMelody' :
             return agnesMelodyImages
+        case 'europeForReal' :
+            return europeForRealImages
+        case 'postIt' :
+            return postItImages
+        case 'theHub' :
+            return theHubImages
         default :
         return null
     }

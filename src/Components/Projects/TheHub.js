@@ -1,33 +1,34 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function AfricanRhymes() {
+function TheHub() {
 
     const description = () => {
         return (
             <div>
-                <h3>Clips pour comptines centrafricaines</h3>
-                <h3>ARB Music Label</h3>
+                <h3>Coréalisé avec Mathilde Bédouet</h3>
+                <h3>Clip pour le groupe The HUB</h3>
             </div>
         )
     }
 
     const paragraph = () => {
         return (
-            <p>5 clips réalisés en 2d numérique, 2016</p>
+            <div>
+                <p>Technique: 2D numérique, rotoscopie et vidéoprojection</p>
+                <p>Production: L'OGRE, ZRP, 2014</p>
+            </div>
         );
     }
 
-
     return (
         <ProjectComponent
-            title={'Comptines Africaines'}
-            imagesKey={'africanRhymes'}
+            title={"Aligator, The Hub"}
+            imagesKey={'theHub'}
             description={description()}
             paragraph={paragraph()}
-            useSlider
         />
     )
 }
 
-export default AfricanRhymes
+export default TheHub

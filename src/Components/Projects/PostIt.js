@@ -1,33 +1,35 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function AfricanRhymes() {
+function PostIt() {
 
     const description = () => {
         return (
             <div>
-                <h3>Clips pour comptines centrafricaines</h3>
-                <h3>ARB Music Label</h3>
+                <h3>Création de décors en papier et animation en stop-motion pour une publicité  de la marque Post it</h3>
+                <h3>Production, Les Monstres, 2016</h3>
             </div>
         )
     }
 
     const paragraph = () => {
         return (
-            <p>5 clips réalisés en 2d numérique, 2016</p>
+            <div>
+                <p>Making off réalisé par Léa Troulard</p>
+            </div>
         );
     }
 
-
     return (
         <ProjectComponent
-            title={'Comptines Africaines'}
-            imagesKey={'africanRhymes'}
+            title={"Post-it"}
+            imagesKey={'postIt'}
             description={description()}
             paragraph={paragraph()}
+            invertedProject
             useSlider
         />
     )
 }
 
-export default AfricanRhymes
+export default PostIt

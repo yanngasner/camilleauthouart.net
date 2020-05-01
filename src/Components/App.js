@@ -8,7 +8,10 @@ import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
 import AgnesMelody from "./Projects/AgnesMelody";
 import BlindDeads from './Projects/BlindDeads'
+import EuropeForReal from "./Projects/EuropeForReal";
 import AfricanRhymes from "./Projects/AfricanRhymes";
+import PostIt from "./Projects/PostIt";
+import TheHub from "./Projects/TheHub";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
 
@@ -37,7 +40,16 @@ function App() {
                 <BlindDeads/>
             </div>
             <div ref={componentRefs[6]}>
+                <EuropeForReal/>
+            </div>
+            <div ref={componentRefs[7]}>
                 <AfricanRhymes/>
+            </div>
+            <div ref={componentRefs[7]}>
+                <PostIt/>
+            </div>
+            <div ref={componentRefs[7]}>
+                <TheHub/>
             </div>
         </div>
     );
