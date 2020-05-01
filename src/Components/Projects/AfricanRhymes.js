@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
@@ -29,18 +29,15 @@ function AfricanRhymes() {
                 {paragraph()}
             </div>
             <div className='project-media'>
-                <div className='inner-project-media'>
-                    {currentImage.url ?
-                        <div className='video-container'>
-                            <ResponsivePlayer url={currentImage.url} />
-                        </div> :
+                <div className='media-container'>
+                    <div className='inner-media-container'>
                         <div className='image-container'>
-                            <img src={currentImage.src} alt={`African Rhymes ${currentImage.index}`} />
+                            <img src={currentImage.src} alt={`Comptines Africaines ${currentImage.index}`}/>
                         </div>
-                    }
-                    <div className='carousel-container'>
-                        <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container' />
                     </div>
+                </div>
+                <div className='carousel-container'>
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged}/>
                 </div>
             </div>
         </div>

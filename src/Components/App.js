@@ -1,9 +1,7 @@
 import React, {useRef} from 'react'
-import '../Styles/App.css'
-import '../Styles/Projects.css'
+import './App.css'
 
 import NavigationBar from './NavigationBar/NavigationBar'
-import Contact from "./Contact";
 
 import Arch from './Projects/Arch'
 import BlindDeads from './Projects/BlindDeads'
@@ -38,7 +36,6 @@ function App() {
                 <AfricanRhymes/>
             </div>
             <div ref={componentRefs[6]}>
-                <Contact/>
             </div>
         </div>
     );

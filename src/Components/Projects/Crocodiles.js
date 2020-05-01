@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import imageProvider from '../../Hooks/imageProvider'
 import useShowText from '../../Hooks/useShowText'
 import ImageSlider from '../ImageSlider/ImageSlider'
+import ResponsivePlayer from "../ResponsivePlayer/ResponsivePlayer";
 
 function Crocodiles() {
 
@@ -23,25 +24,27 @@ function Crocodiles() {
     }
 
     return (
-            <div className='project-container white-project-container'>
-                <div className='project-media'>
-                    <div className='inner-project-media'>
+        <div className='project-container white-project-container'>
+            <div className='project-media'>
+                <div className='media-container'>
+                    <div className='inner-media-container'>
                         <div className='image-container'>
-                            <img src={currentImage.src} alt={`Crocodiles ${currentImage.index}`} />
-                        </div>
-                        <div className='carousel-container'>
-                            <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} className='carousel-container' />
+                            <img src={currentImage.src} alt={`Les Crocodiles du Nil${currentImage.index}`}/>
                         </div>
                     </div>
                 </div>
-                <div className='project-text'>
-                    <h2>Les Crocodiles du Nil</h2>
-                    <h3>Coréalisation avec Mélia Gilson.</h3>
-                    <h3>Court métrage d'animation en papier découpé, 1min30.</h3>
-                    <h3>Sélection Officielle Annecy 2019.</h3>
-                    <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>
-                    {paragraph()}
+                <div className='carousel-container'>
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged}/>
                 </div>
+            </div>
+            <div className='project-text'>
+                <h2>Les Crocodiles du Nil</h2>
+                <h3>Coréalisation avec Mélia Gilson.</h3>
+                <h3>Court métrage d'animation en papier découpé, 1min30.</h3>
+                <h3>Sélection Officielle Annecy 2019.</h3>
+                <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>
+                {paragraph()}
+            </div>
         </div>
     )
 }

@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2:1000,600,400&display=swap');
+
+/* Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --nav-height:75px;
+}
+
+.nav-area {
+    height: var(--nav-height);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto auto;
+}
+
+.project-container {
+    display : flex;
+    justify-content: space-between;
+    padding:1.25% 5%;
+}
+
+.project-text {
+    width : 37.5%;
+    padding-top:5rem;
+}
+
+.project-media {
+    width : 60%;
+    position: relative;
+}
+
+.media-container {
+    position: relative;
+    width:100%;
+    padding-bottom: 65%;
+}
+
+.inner-media-container {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.image-container {
+    height:100%;
+    width:100%;
+    display:flex;
+}
+
+.carousel-container {
+    height:100px;
+    display:flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .project-container {
+        flex-direction: column;
+    }
+    .project-text, .project-media {
+        width:100%;
+    }
+
+    .project-media {
+        order:1;
+    }
+
+    .project-text {
+        order:2;
+        padding-top: 0;
+    }
+
+    .project-text h2 {
+        margin-top: 2.5%;
+    }
+
+
+}
+
+
+/* Typography */
+
+.App {
+    font-family:'Baloo Paaji 2', 'Calibri';
+    --background: #E7F3F1;
+    --yellow: rgb(255,219,106);
+    --green: #1C8296;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--yellow);
+    text-align: center;
+}
+
+h2 {
+    font-size:2.5rem;
+    font-weight: 900;
+    margin: 2.5rem auto;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size:1.5rem;
+    font-weight:600;
+    margin:0.5em auto;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+p {
+    font-size:1rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.25rem;
+}
+
+button {
+    border:none;
+    background-color:transparent;
+    font: inherit;
+    letter-spacing: 1.5px;
+}
+
+button:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+button:hover, button:focus {
+    outline:none;
+}
+
+
+.light-project-container {
+    background-color: var(--background);
+    color:rgba(0,0,0, 0.8)
+}
+
+.light-project-container h2,
+.light-project-container button {
+    color: var(--green);
+}
+
+.white-project-container {
+    background-color : white;
+    color:rgba(0,0,0, 0.8);
+}
+
+.white-project-container h2,
+.white-project-container button {
+    color: var(--yellow);
+}
+
+.project-text button {
+    width:100%;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+

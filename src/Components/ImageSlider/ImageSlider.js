@@ -20,14 +20,18 @@ function ImageSlider({images, currentImage, onSelectionChanged}) {
         setTimeout(() => setShouldFocus(false), 10)
     }
 
-    const previousImage = images[(currentImage.index + images.length - 2) % images.length]
-    const nextImage = images[currentImage.index % images.length]
+    const minus1Image = images[(currentImage.index + images.length - 2) % images.length]
+    const minus2Image = images[(currentImage.index + images.length - 3) % images.length]
+    const plus1Image = images[currentImage.index % images.length]
+    const plus2Image = images[(currentImage.index + images.length + 1) % images.length]
 
     return (
         <div className='slider-container'>
-            <ImageSliderElement image={previousImage} onSelected={onSelected} onNextSelected={onNextSelected} />
+            <ImageSliderElement image={minus2Image} onSelected={onSelected} onNextSelected={onNextSelected} />
+            <ImageSliderElement image={minus1Image} onSelected={onSelected} onNextSelected={onNextSelected} />
             <ImageSliderElement image={currentImage} focus={shouldFocus} onSelected={onSelected} onNextSelected={onNextSelected} />
-            <ImageSliderElement image={nextImage} onSelected={onSelected} onNextSelected={onNextSelected} />
+            <ImageSliderElement image={plus1Image} onSelected={onSelected} onNextSelected={onNextSelected} />
+            <ImageSliderElement image={plus2Image} onSelected={onSelected} onNextSelected={onNextSelected} />
         </div>
     )
 }

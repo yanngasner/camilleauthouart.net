@@ -4,7 +4,7 @@ function useShowText(initialShowText) {
 
     const [showText, setShowText] = useState(initialShowText)
 
-    const showTextLabel = showText ? 'Hide' : 'Show more'
+    const showTextLabel = '...'
     const changeShowText = () => setShowText(previous => !previous)
 
     return [showText, showTextLabel, changeShowText]
