@@ -9,16 +9,14 @@
     box-sizing: border-box;
     padding: 10px 10px;
     height:100%;
-    display:flex
-}
-
-.slider-image-container img {
-    margin: auto
+    width:100%;
+    display:flex;
 }
 
 .arrow-container {
-    flex: 0 0 25px;
-    height: 50px
+    flex: 0 0 50px;
+    height: 50px;
+    padding: 0 10px;
 }
 
 .arrow-container img {

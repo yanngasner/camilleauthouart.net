@@ -21,11 +21,6 @@
     margin: auto;
 }
 
-.title-container h1 {
-    line-height: 1em;
-    margin: 0 auto;
-}
-
 .nav-container ul {
     display: flex;
     list-style: none;

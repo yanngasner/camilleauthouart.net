@@ -22,7 +22,9 @@ function ProjectComponent({imagesKey, title, description, paragraph, invertedPro
                 <h2>{title}</h2>
                 {description}
                 <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>
-                {displayedParagraph()}
+                <div className='project-paragraph'>
+                    {displayedParagraph()}
+                </div>
             </div>
         )
     }
@@ -32,9 +34,14 @@ function ProjectComponent({imagesKey, title, description, paragraph, invertedPro
             <div className='project-media'>
                 <div className='media-container'>
                     <div className='inner-media-container'>
-                        <div className='image-container'>
-                            <img src={currentImage.src} alt={`${title} ${currentImage.index}`}/>
-                        </div>
+                        {currentImage.url ?
+                            <div className='video-container'>
+                                <ResponsivePlayer url={currentImage.url}/>
+                            </div> :
+                            <div className='image-container'>
+                                <img src={currentImage.src} alt={`${title} ${currentImage.index}`}/>
+                            </div>
+                        }
                     </div>
                 </div>
                 {useSlider && <div className='carousel-container'>
