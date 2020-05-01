@@ -87,10 +87,10 @@ img {
 
 /* Typography */
 
-.App {
+* {
     font-family:'Baloo Paaji 2', 'Calibri';
     --background: #E7F3F1;
-    --yellow: rgb(255,219,106);
+    --yellow: #FFDB6A;
     --green: #1C8296;
 }
 
@@ -142,23 +142,23 @@ button:hover, button:focus {
 }
 
 
-.light-project-container {
+.regular-project-container {
     background-color: var(--background);
     color:rgba(0,0,0, 0.8)
 }
 
-.light-project-container h2,
-.light-project-container button {
+.regular-project-container h2,
+.regular-project-container button {
     color: var(--green);
 }
 
-.white-project-container {
+.goofy-project-container {
     background-color : white;
     color:rgba(0,0,0, 0.8);
 }
 
-.white-project-container h2,
-.white-project-container button {
+.goofy-project-container h2,
+.goofy-project-container button {
     color: var(--yellow);
 }
 
