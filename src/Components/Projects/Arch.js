@@ -37,6 +37,7 @@ function Arch() {
             imagesKey={'arch'}
             description={description()}
             paragraph={paragraph()}
+            useSlider
         />
     )
 }

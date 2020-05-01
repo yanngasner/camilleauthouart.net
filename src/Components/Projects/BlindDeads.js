@@ -34,6 +34,7 @@ function BlindDeads() {
             description={description()}
             paragraph={paragraph()}
             invertedProject
+            useSlider
         />
     )
 }

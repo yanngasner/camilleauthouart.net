@@ -37,6 +37,7 @@ function Lake() {
             imagesKey={'lake'}
             description={description()}
             paragraph={paragraph()}
+            useSlider
         />
     )
 }

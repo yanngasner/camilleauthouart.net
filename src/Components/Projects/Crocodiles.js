@@ -32,6 +32,7 @@ function Crocodiles() {
             description={description()}
             paragraph={paragraph()}
             invertedProject
+            useSlider
         />
     )
 }
