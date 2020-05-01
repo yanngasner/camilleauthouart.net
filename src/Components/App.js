@@ -4,9 +4,10 @@ import './App.css'
 import NavigationBar from './NavigationBar/NavigationBar'
 
 import Arch from './Projects/Arch'
-import BlindDeads from './Projects/BlindDeads'
-import Lake from './Projects/Lake'
 import Crocodiles from "./Projects/Crocodiles";
+import WorryBirds from "./Projects/WorryBirds";
+import AgnesMelody from "./Projects/AgnesMelody";
+import BlindDeads from './Projects/BlindDeads'
 import AfricanRhymes from "./Projects/AfricanRhymes";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
@@ -24,18 +25,19 @@ function App() {
                 <Arch/>
             </div>
             <div ref={componentRefs[2]}>
-                <BlindDeads/>
-            </div>
-            <div ref={componentRefs[3]}>
-                <Lake/>
-            </div>
-            <div ref={componentRefs[4]}>
                 <Crocodiles/>
             </div>
+            <div ref={componentRefs[3]}>
+                <WorryBirds/>
+            </div>
+            <div ref={componentRefs[4]}>
+                <AgnesMelody/>
+            </div>
             <div ref={componentRefs[5]}>
-                <AfricanRhymes/>
+                <BlindDeads/>
             </div>
             <div ref={componentRefs[6]}>
+                <AfricanRhymes/>
             </div>
         </div>
     );

@@ -26,10 +26,11 @@ function NavigationBar({onSelectedComponentChanged, activeComponentId}) {
                 <ul>
                     <li><NavigationButton id={1} isActive={focusedButtonId >= 1 && focusedButtonId <= 4}
                                           text="Films d'anim" onClick={onClick}/></li>
-                    <li><NavigationButton id={5} isActive={focusedButtonId === 5} text="Commandes" onClick={onClick}/>
+                    <li><NavigationButton id={5} isActive={focusedButtonId >= 5 && focusedButtonId <= 6}
+                                          text="Commandes" onClick={onClick}/>
                     </li>
-                    <li><NavigationButton id={6} isActive={focusedButtonId === 6} text="Docs" onClick={onClick}/></li>
-                    <li><NavigationButton id={6} isActive={focusedButtonId === 6} text="Dessins" onClick={onClick}/>
+                    <li><NavigationButton id={6} isActive={focusedButtonId === 7} text="Docs" onClick={onClick}/></li>
+                    <li><NavigationButton id={6} isActive={focusedButtonId === 7} text="Dessins" onClick={onClick}/>
                     </li>
                 </ul>
                 {/*<ul>*/}

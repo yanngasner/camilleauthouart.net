@@ -25,6 +25,7 @@ function AfricanRhymes() {
             imagesKey={'africanRhymes'}
             description={description()}
             paragraph={paragraph()}
+            invertedProject
             useSlider
         />
     )

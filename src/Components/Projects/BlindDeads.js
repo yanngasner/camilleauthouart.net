@@ -33,7 +33,6 @@ function BlindDeads() {
             imagesKey={'blindDeads'}
             description={description()}
             paragraph={paragraph()}
-            invertedProject
             useSlider
         />
     )
