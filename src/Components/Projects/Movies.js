@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
-import crocodiles1 from "../../resources/crocodiles1.jpg";
 
 function Movies() {
 
