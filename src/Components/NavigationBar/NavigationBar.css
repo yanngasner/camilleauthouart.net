@@ -1,6 +1,6 @@
 
 .nav-container {
-    height: calc(var(--nav-height) + 8px);
+    height: var(--nav-height);
     position: fixed;
     top: 0;
     left: 0;

@@ -20,47 +20,50 @@ function useActiveComponent(activeComponentsCount) {
         //componentsRef.current = new Array(activeComponentsCount)
     // }
 
+    //provides the active component ref
     const [activeComponentId, setActiveComponentId] = useState(1)
 
     //provides the offset of the sticky navbar;
-    const getNavOffset = () => componentsRef[0].current
-        ? componentsRef[0].current.offsetHeight + componentsRef[0].current.offsetTop
-        : 0
+    const [navOffset, setNavOffset] = useState(0)
 
     //autoscroll to the selected component div
     const onSelectedComponentChanged = id => {
-        const navOffset = getNavOffset()
         if (componentsRef[id].current) {
-            var offsetTop = componentsRef[id].current.offsetTop
+            let offsetTop = componentsRef[id].current.offsetTop;
             offsetTop = offsetTop - navOffset
             window.scroll({ top: offsetTop, behavior: "smooth" })
         }
     }
 
+    useEffect( () => {
+        setNavOffset(componentsRef[0].current ? componentsRef[0].current.offsetHeight : 0)
+    }, [componentsRef])
+
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        //on scroll, set the active component regarding the scroll position
+        const handleScroll = (componentsRef, activeComponentsCount, navOffset) => {
+            for (var i = 1; i < activeComponentsCount; i++) {
+                const refCurrent = componentsRef[i].current
+                if (!refCurrent)
+                    return
+                var divMiddle = refCurrent.offsetTop + refCurrent.offsetHeight / 2
+                divMiddle = divMiddle - navOffset;
+                if (window.scrollY <= divMiddle) {
+                    setActiveComponentId(i)
+                    return
+                }
+            }
+            setActiveComponentId(activeComponentsCount)
+        }
+
+        window.addEventListener('scroll', () => handleScroll(componentsRef, activeComponentsCount, navOffset))
 
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener('scroll', () => handleScroll(componentsRef, activeComponentsCount, navOffset))
         }
-    }, [])
+    }, [componentsRef, activeComponentsCount, navOffset])
 
-    //on scroll, set the active component regarding the scroll position
-    const handleScroll = () => {
-        const navOffset = getNavOffset();
-        for (var i = 1; i < activeComponentsCount; i++) {
-            const refCurrent = componentsRef[i].current
-            if (!refCurrent)
-                return
-            var divMiddle = refCurrent.offsetTop + refCurrent.offsetHeight / 2
-            divMiddle = divMiddle - navOffset;
-            if (window.scrollY <= divMiddle) {
-                setActiveComponentId(i)
-                return
-            }
-        }
-        setActiveComponentId(activeComponentsCount)
-    }
+
 
     // return :
     //- the refs to provide to the components div
