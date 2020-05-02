@@ -2,21 +2,25 @@ import arch1 from './../resources/arch1.jpg'
 import arch2 from './../resources/arch2.jpg'
 import arch3 from './../resources/arch3.jpg'
 import arch4 from './../resources/arch4.jpg'
+
 import blindDeads1 from './../resources/blindDeads1.jpg'
 import blindDeads2 from './../resources/blindDeads2.jpg'
 import blindDeads3 from './../resources/blindDeads3.jpg'
 import blindDeads4 from './../resources/blindDeads4.JPG'
+
 import crocodiles1 from './../resources/crocodiles1.jpg'
 import crocodiles2 from './../resources/crocodiles2.jpg'
 import crocodiles3 from './../resources/crocodiles3.jpg'
 import crocodiles4 from './../resources/crocodiles4.jpg'
 import crocodiles5 from './../resources/crocodiles5.jpg'
 import crocodiles6 from './../resources/crocodiles6.jpg'
+
 import africanRhymes1 from './../resources/africanRhymes1.jpg'
 import africanRhymes2 from './../resources/africanRhymes2.jpg'
 import africanRhymes3 from './../resources/africanRhymes3.jpg'
 import africanRhymes4 from './../resources/africanRhymes4.jpg'
 import africanRhymes5 from './../resources/africanRhymes5.jpg'
+
 import postIt1 from './../resources/postIt1.jpg'
 import postIt2 from './../resources/postIt2.jpg'
 import postIt3 from './../resources/postIt3.jpg'
@@ -26,16 +30,90 @@ import postIt6 from './../resources/postIt6.jpg'
 import postIt7 from './../resources/postIt7.jpg'
 import postIt8 from './../resources/postIt8.jpg'
 import postIt9 from './../resources/postIt9.jpg'
+
 import authouart1 from './../resources/authouart1.jpg'
 import authouart2 from './../resources/authouart2.jpg'
 import authouart3 from './../resources/authouart3.jpg'
 import authouart4 from './../resources/authouart4.jpg'
 import authouart5 from './../resources/authouart5.jpg'
 import authouart6 from './../resources/authouart6.jpg'
+
 import artRooms1 from './../resources/artRoom1.jpg'
 import artRooms2 from './../resources/artRoom2.jpg'
 import artRooms3 from './../resources/artRoom3.jpg'
 import artRooms4 from './../resources/artRoom4.jpg'
+
+import playTime1 from './../resources/playTime1.jpg'
+import playTime2 from './../resources/playTime2.jpg'
+import playTime3 from './../resources/playTime3.jpg'
+import playTime4 from './../resources/playTime4.jpg'
+import playTime5 from './../resources/playTime5.jpg'
+import playTime6 from './../resources/playTime6.jpg'
+import playTime7 from './../resources/playTime7.jpg'
+import playTime8 from './../resources/playTime8.jpg'
+import playTime9 from './../resources/playTime9.jpg'
+import playTime10 from './../resources/playTime10.jpg'
+import playTime11 from './../resources/playTime11.jpg'
+import playTime12 from './../resources/playTime12.jpg'
+import playTime13 from './../resources/playTime13.jpg'
+
+import aragon1 from './../resources/aragon1.jpg'
+import aragon2 from './../resources/aragon2.jpg'
+import aragon3 from './../resources/aragon3.jpg'
+import aragon4 from './../resources/aragon4.jpg'
+import aragon5 from './../resources/aragon5.jpg'
+import aragon6 from './../resources/aragon6.jpg'
+import aragon7 from './../resources/aragon7.jpg'
+import aragon8 from './../resources/aragon8.jpg'
+import aragon9 from './../resources/aragon9.jpg'
+import aragon10 from './../resources/aragon10.jpg'
+import aragon11 from './../resources/aragon11.jpg'
+import aragon12 from './../resources/aragon12.jpg'
+import aragon13 from './../resources/aragon13.jpg'
+import aragon14 from './../resources/aragon14.jpg'
+import aragon15 from './../resources/aragon15.jpg'
+import aragon16 from './../resources/aragon16.jpg'
+import aragon17 from './../resources/aragon17.jpg'
+import aragon18 from './../resources/aragon18.jpg'
+import aragon19 from './../resources/aragon19.jpg'
+import aragon20 from './../resources/aragon20.jpg'
+import aragon21 from './../resources/aragon21.jpg'
+import aragon22 from './../resources/aragon22.jpg'
+import aragon23 from './../resources/aragon23.jpg'
+import aragon24 from './../resources/aragon24.jpg'
+import aragon25 from './../resources/aragon25.jpg'
+import aragon26 from './../resources/aragon26.jpg'
+import aragon27 from './../resources/aragon27.jpg'
+import aragon28 from './../resources/aragon28.jpg'
+import aragon29 from './../resources/aragon29.jpg'
+import aragon30 from './../resources/aragon30.jpg'
+import aragon31 from './../resources/aragon31.jpg'
+import aragon32 from './../resources/aragon32.jpg'
+import aragon33 from './../resources/aragon33.jpg'
+import aragon34 from './../resources/aragon34.jpg'
+import aragon35 from './../resources/aragon35.jpg'
+import aragon36 from './../resources/aragon36.jpg'
+import aragon37 from './../resources/aragon37.jpg'
+import aragon38 from './../resources/aragon38.jpg'
+
+import forests1 from './../resources/forests1.jpg'
+import forests2 from './../resources/forests2.jpg'
+import forests3 from './../resources/forests3.jpg'
+import forests4 from './../resources/forests4.jpg'
+import forests5 from './../resources/forests5.jpg'
+import forests6 from './../resources/forests6.jpg'
+import forests7 from './../resources/forests7.jpg'
+
+import movies1 from './../resources/movies1.jpg'
+import movies2 from './../resources/movies2.jpg'
+import movies3 from './../resources/movies3.jpg'
+import movies4 from './../resources/movies4.jpg'
+import movies5 from './../resources/movies5.jpg'
+import movies6 from './../resources/movies6.jpg'
+import movies7 from './../resources/movies7.jpg'
+import movies8 from './../resources/movies8.jpg'
+
+
 
 const archImages = [
     { index: 1, src: arch1, title: 'arch1', description: '' },
@@ -116,6 +194,84 @@ const authouartImages = [
     { index: 6, src: authouart6, title: 'authouart6', description: '', url: 'https://youtu.be/nt22sqBBEqA' },
 ]
 
+const playTimeImages = [
+    { index: 1, src: playTime1, title: 'playTime1', description: '' },
+    { index: 2, src: playTime2, title: 'playTime2', description: '' },
+    { index: 3, src: playTime3, title: 'playTime3', description: '' },
+    { index: 4, src: playTime4, title: 'playTime4', description: '' },
+    { index: 5, src: playTime5, title: 'playTime5', description: '' },
+    { index: 6, src: playTime6, title: 'playTime6', description: '' },
+    { index: 7, src: playTime7, title: 'playTime7', description: '' },
+    { index: 8, src: playTime8, title: 'playTime8', description: '' },
+    { index: 9, src: playTime9, title: 'playTime9', description: '' },
+    { index: 10, src: playTime10, title: 'playTime10', description: '' },
+    { index: 11, src: playTime11, title: 'playTime11', description: '' },
+    { index: 12, src: playTime12, title: 'playTime12', description: '' },
+    { index: 13, src: playTime13, title: 'playTime13', description: '' },
+];
+
+const aragonImages = [
+    { index: 1, src: aragon1, title: 'aragon1', description: '' },
+    { index: 2 , src: aragon2 , title: 'aragon2 ', description: '' },
+    { index: 3 , src: aragon3 , title: 'aragon3 ', description: '' },
+    { index: 4 , src: aragon4 , title: 'aragon4 ', description: '' },
+    { index: 5 , src: aragon5 , title: 'aragon5 ', description: '' },
+    { index: 6 , src: aragon6 , title: 'aragon6 ', description: '' },
+    { index: 7 , src: aragon7 , title: 'aragon7 ', description: '' },
+    { index: 8 , src: aragon8 , title: 'aragon8 ', description: '' },
+    { index: 9 , src: aragon9 , title: 'aragon9 ', description: '' },
+    { index: 10, src: aragon10, title: 'aragon10', description: '' },
+    { index: 11, src: aragon11, title: 'aragon11', description: '' },
+    { index: 12, src: aragon12, title: 'aragon12', description: '' },
+    { index: 13, src: aragon13, title: 'aragon13', description: '' },
+    { index: 14, src: aragon14, title: 'aragon14', description: '' },
+    { index: 15, src: aragon15, title: 'aragon15', description: '' },
+    { index: 16, src: aragon16, title: 'aragon16', description: '' },
+    { index: 17, src: aragon17, title: 'aragon17', description: '' },
+    { index: 18, src: aragon18, title: 'aragon18', description: '' },
+    { index: 19, src: aragon19, title: 'aragon19', description: '' },
+    { index: 20, src: aragon20, title: 'aragon20', description: '' },
+    { index: 21, src: aragon21, title: 'aragon21', description: '' },
+    { index: 22, src: aragon22, title: 'aragon22', description: '' },
+    { index: 23, src: aragon23, title: 'aragon23', description: '' },
+    { index: 24, src: aragon24, title: 'aragon24', description: '' },
+    { index: 25, src: aragon25, title: 'aragon25', description: '' },
+    { index: 26, src: aragon26, title: 'aragon26', description: '' },
+    { index: 27, src: aragon27, title: 'aragon27', description: '' },
+    { index: 28, src: aragon28, title: 'aragon28', description: '' },
+    { index: 29, src: aragon29, title: 'aragon29', description: '' },
+    { index: 30, src: aragon30, title: 'aragon30', description: '' },
+    { index: 31, src: aragon31, title: 'aragon31', description: '' },
+    { index: 32, src: aragon32, title: 'aragon32', description: '' },
+    { index: 33, src: aragon33, title: 'aragon33', description: '' },
+    { index: 34, src: aragon34, title: 'aragon34', description: '' },
+    { index: 35, src: aragon35, title: 'aragon35', description: '' },
+    { index: 36, src: aragon36, title: 'aragon36', description: '' },
+    { index: 37, src: aragon37, title: 'aragon37', description: '' },
+    { index: 38, src: aragon38, title: 'aragon38', description: '' },
+];
+
+const forestsImages = [
+    { index: 1, src: forests1, title: 'forests1', description: '' },
+    { index: 2, src: forests2, title: 'forests2', description: '' },
+    { index: 3, src: forests3, title: 'forests3', description: '' },
+    { index: 4, src: forests4, title: 'forests4', description: '' },
+    { index: 5, src: forests5, title: 'forests5', description: '' },
+    { index: 6, src: forests6, title: 'forests6', description: '' },
+    { index: 7, src: forests7, title: 'forests7', description: '' },
+]
+
+const moviesImages = [
+    { index: 1, src: movies1, title: 'movies1', description: '' },
+    { index: 2, src: movies2, title: 'movies2', description: '' },
+    { index: 3, src: movies3, title: 'movies3', description: '' },
+    { index: 4, src: movies4, title: 'movies4', description: '' },
+    { index: 5, src: movies5, title: 'movies5', description: '' },
+    { index: 6, src: movies6, title: 'movies6', description: '' },
+    { index: 7, src: movies7, title: 'movies7', description: '' },
+    { index: 8, src: movies8, title: 'movies8', description: '' },
+]
+
 const imageProvider =
 (project) => {
     switch(project) {
@@ -143,6 +299,14 @@ const imageProvider =
             return artRoomsImages
         case 'authouart' :
             return authouartImages
+        case 'playTime' :
+            return playTimeImages
+        case 'aragon' :
+            return aragonImages
+        case 'forests' :
+            return forestsImages
+        case 'movies' :
+            return moviesImages
         default :
         return null
     }

@@ -7,14 +7,21 @@ import Arch from './Projects/Arch'
 import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
 import AgnesMelody from "./Projects/AgnesMelody";
+
 import BlindDeads from './Projects/BlindDeads'
 import EuropeForReal from "./Projects/EuropeForReal";
 import AfricanRhymes from "./Projects/AfricanRhymes";
 import PostIt from "./Projects/PostIt";
 import TheHub from "./Projects/TheHub";
+
 import Mediums from "./Projects/Mediums";
 import ArtRooms from "./Projects/ArtRooms";
 import Authouart from "./Projects/Authouart";
+
+import PlayTime from "./Projects/PlayTime";
+import Aragon from "./Projects/Aragon";
+import Forests from "./Projects/Forests";
+import Movies from "./Projects/Movies";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
 
@@ -62,6 +69,18 @@ function App() {
             </div>
             <div ref={componentRefs[12]}>
                 <Authouart/>
+            </div>
+            <div ref={componentRefs[13]}>
+                <PlayTime/>
+            </div>
+            <div ref={componentRefs[14]}>
+                <Aragon/>
+            </div>
+            <div ref={componentRefs[15]}>
+                <Forests/>
+            </div>
+            <div ref={componentRefs[16]}>
+                <Movies/>
             </div>
         </div>
     );
