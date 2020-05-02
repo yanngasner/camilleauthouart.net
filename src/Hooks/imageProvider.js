@@ -32,6 +32,10 @@ import authouart3 from './../resources/authouart3.jpg'
 import authouart4 from './../resources/authouart4.jpg'
 import authouart5 from './../resources/authouart5.jpg'
 import authouart6 from './../resources/authouart6.jpg'
+import artRooms1 from './../resources/artRoom1.jpg'
+import artRooms2 from './../resources/artRoom2.jpg'
+import artRooms3 from './../resources/artRoom3.jpg'
+import artRooms4 from './../resources/artRoom4.jpg'
 
 const archImages = [
     { index: 1, src: arch1, title: 'arch1', description: '' },
@@ -96,12 +100,11 @@ const mediumsImages = [
     { index: 1, src: null, title: 'mediums', description: '', url: 'https://vimeo.com/209577469' },
 ]
 
-const spiegelmanImages = [
-    { index: 1, src: null, title: 'spiegelman', description: '', url: 'https://youtu.be/Ru-NMTSj_Ec' },
-]
-
-const deroubaixImages = [
-    { index: 1, src: null, title: 'deroubaix', description: '', url: 'https://youtu.be/NvN_kvpMV18' },
+const artRoomsImages = [
+    { index: 1, src: artRooms1, title: 'artRooms1', description: '', url: 'https://youtu.be/Ru-NMTSj_Ec' },
+    { index: 2, src: artRooms2, title: 'artRooms2', description: '', url: 'https://youtu.be/NvN_kvpMV18' },
+    { index: 3, src: artRooms3, title: 'artRooms3', description: '', url: 'https://www.youtube.com/watch?v=ZX_IqKPT8LU' },
+    { index: 4, src: artRooms4, title: 'artRooms4', description: '', url: 'https://www.youtube.com/watch?v=kGWT4pEnJtk' },
 ]
 
 const authouartImages = [
@@ -136,10 +139,8 @@ const imageProvider =
             return theHubImages
         case 'mediums' :
             return mediumsImages
-        case 'spiegelman' :
-            return spiegelmanImages
-        case 'deroubaix' :
-            return deroubaixImages
+        case 'artRooms' :
+            return artRoomsImages
         case 'authouart' :
             return authouartImages
         default :

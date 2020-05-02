@@ -13,8 +13,7 @@ import AfricanRhymes from "./Projects/AfricanRhymes";
 import PostIt from "./Projects/PostIt";
 import TheHub from "./Projects/TheHub";
 import Mediums from "./Projects/Mediums";
-import Spiegelman from "./Projects/Spiegelman";
-import Deroubaix from "./Projects/Deroubaix";
+import ArtRooms from "./Projects/ArtRooms";
 import Authouart from "./Projects/Authouart";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
@@ -59,12 +58,9 @@ function App() {
                 <Mediums/>
             </div>
             <div ref={componentRefs[11]}>
-                <Spiegelman/>
+                <ArtRooms/>
             </div>
             <div ref={componentRefs[12]}>
-                <Deroubaix/>
-            </div>
-            <div ref={componentRefs[13]}>
                 <Authouart/>
             </div>
         </div>

@@ -1,13 +1,12 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Deroubaix() {
+function ArtRooms() {
 
     const description = () => {
         return (
             <div>
-                <h3>Impressions lithographiques de l'artiste Damien Deroubaix aux ateliers Guilbaud Paris et Bergerac.</h3>
-                <h3>Réalisation: Camille Authouart et Léa Troulard, 2017</h3>
+                <h3>Collection de documentaires sur des ateliers d'art</h3>
             </div>
         )
     }
@@ -21,13 +20,13 @@ function Deroubaix() {
 
     return (
         <ProjectComponent
-            title={'Ateliers Stéphane Guilbaud : Damien Deroubaix'}
-            imagesKey={'deroubaix'}
+            title={"Ateliers d'Art"}
+            imagesKey={'artRooms'}
             description={description()}
             paragraph={paragraph()}
-            invertedProject
+            useSlider
         />
     )
 }
 
-export default Deroubaix
+export default ArtRooms

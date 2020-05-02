@@ -27,6 +27,7 @@ function Authouart() {
             imagesKey={'authouart'}
             description={description()}
             paragraph={paragraph()}
+            invertedProject
             useSlider
         />
     )
