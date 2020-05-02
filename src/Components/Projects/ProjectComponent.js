@@ -36,7 +36,7 @@ function ProjectComponent({imagesKey, title, description, paragraph, invertedPro
                     <div className='inner-media-container'>
                         {currentImage.url ?
                             <div className='video-container'>
-                                <ResponsivePlayer url={currentImage.url}/>
+                                <ResponsivePlayer url={currentImage.url} light={currentImage.src}/>
                             </div> :
                             <div className='image-container'>
                                 <img src={currentImage.src} alt={`${title} ${currentImage.index}`}/>
