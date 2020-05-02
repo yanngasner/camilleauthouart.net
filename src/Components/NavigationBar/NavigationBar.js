@@ -8,7 +8,6 @@ function NavigationBar({onSelectedComponentChanged, activeComponentId}) {
     const [focusedButtonId, setFocusedButtonId] = useState(1)
 
     const onClick = id => {
-        setFocusedButtonId(id)
         onSelectedComponentChanged(id)
     }
 
