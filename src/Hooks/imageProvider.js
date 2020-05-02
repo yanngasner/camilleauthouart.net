@@ -43,10 +43,10 @@ const archImages = [
   ]
 
 const blindDeadsImages = [
-{ index: 1, src: blindDeads1, title: 'blindDeads1', description: '' },
-{ index: 2, src: blindDeads2, title: 'blindDeads2', description: '' },
-{ index: 3, src: blindDeads3, title: 'blindDeads3', description: '' },
-{ index: 4, src: blindDeads4, title: 'blindDeads4', description: '', url: 'https://www.youtube.com/watch?v=kcTKkJz5H-o' },
+{ index: 1, src: blindDeads2, title: 'blindDeads2', description: '' },
+{ index: 2, src: blindDeads3, title: 'blindDeads3', description: '' },
+{ index: 3, src: blindDeads4, title: 'blindDeads4', description: '', url: 'https://www.youtube.com/watch?v=kcTKkJz5H-o' },
+{ index: 4, src: blindDeads1, title: 'blindDeads1', description: '' },
 ];
 
 const crocodilesImages = [
@@ -59,11 +59,11 @@ const crocodilesImages = [
 ];
 
 const africanRhymesImages = [
-    { index: 1, src: africanRhymes1, title: 'africanRhymes1', description: '', url: 'https://www.youtube.com/watch?v=lq8bH9YbftU' },
-    { index: 2, src: africanRhymes2, title: 'africanRhymes2', description: '', url: 'https://www.youtube.com/watch?v=wLZfh7eSPVY' },
-    { index: 3, src: africanRhymes3, title: 'africanRhymes3', description: '', url: 'https://www.youtube.com/watch?v=Fm-nqlO98tg' },
-    { index: 4, src: africanRhymes4, title: 'africanRhymes4', description: '', url: 'https://www.youtube.com/watch?v=PsQqYLw9Bt8' },
-    { index: 5, src: africanRhymes5, title: 'africanRhymes5', description: '', url: 'https://www.youtube.com/watch?v=NgmywN8GTic' },
+    { index: 1, src: africanRhymes2, title: 'africanRhymes2', description: '', url: 'https://www.youtube.com/watch?v=wLZfh7eSPVY' },
+    { index: 2, src: africanRhymes3, title: 'africanRhymes3', description: '', url: 'https://www.youtube.com/watch?v=Fm-nqlO98tg' },
+    { index: 3, src: africanRhymes4, title: 'africanRhymes4', description: '', url: 'https://www.youtube.com/watch?v=PsQqYLw9Bt8' },
+    { index: 4, src: africanRhymes5, title: 'africanRhymes5', description: '', url: 'https://www.youtube.com/watch?v=NgmywN8GTic' },
+    { index: 5, src: africanRhymes1, title: 'africanRhymes1', description: '', url: 'https://www.youtube.com/watch?v=lq8bH9YbftU' },
 ]
 
 const worryBirdsImages = [
@@ -83,15 +83,16 @@ const theHubImages = [
 ]
 
 const postItImages = [
-    { index: 1, src: postIt1, title: 'postIt1', description: '', url: 'https://vimeo.com/188803957' },
-    { index: 2, src: postIt2, title: 'postIt2', description: '', url: 'https://vimeo.com/172425375' },
-    { index: 3, src: postIt3, title: 'postIt3', description: '' },
-    { index: 4, src: postIt4, title: 'postIt4', description: '' },
-    { index: 5, src: postIt5, title: 'postIt5', description: '' },
-    { index: 6, src: postIt6, title: 'postIt6', description: '' },
-    { index: 7, src: postIt7, title: 'postIt7', description: '' },
-    { index: 8, src: postIt8, title: 'postIt8', description: '' },
-    { index: 9, src: postIt9, title: 'postIt9', description: '' },
+    { index: 1, src: postIt2, title: 'postIt2', description: '', url: 'https://vimeo.com/172425375' },
+    { index: 2, src: postIt3, title: 'postIt3', description: '' },
+    { index: 3, src: postIt4, title: 'postIt4', description: '' },
+    { index: 4, src: postIt5, title: 'postIt5', description: '' },
+    { index: 5, src: postIt6, title: 'postIt6', description: '' },
+    { index: 6, src: postIt7, title: 'postIt7', description: '' },
+    { index: 6, src: postIt8, title: 'postIt8', description: '' },
+    { index: 8, src: postIt9, title: 'postIt9', description: '' },
+    { index: 9, src: postIt1, title: 'postIt1', description: '', url: 'https://vimeo.com/188803957' },
+
 ]
 
 const imageProvider =
