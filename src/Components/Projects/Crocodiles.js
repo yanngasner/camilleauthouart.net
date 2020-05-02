@@ -31,7 +31,6 @@ function Crocodiles() {
             imagesKey={'crocodiles'}
             description={description()}
             paragraph={paragraph()}
-            invertedProject
             useSlider
         />
     )

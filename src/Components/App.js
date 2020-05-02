@@ -25,10 +25,10 @@ function App() {
                            activeComponentId={activeComponentId}/>
             <div className='nav-area' ref={componentRefs[0]}/>
             <div ref={componentRefs[1]}>
-                <Arch/>
+                <Crocodiles/>
             </div>
             <div ref={componentRefs[2]}>
-                <Crocodiles/>
+                <Arch/>
             </div>
             <div ref={componentRefs[3]}>
                 <WorryBirds/>
@@ -45,10 +45,10 @@ function App() {
             <div ref={componentRefs[7]}>
                 <AfricanRhymes/>
             </div>
-            <div ref={componentRefs[7]}>
+            <div ref={componentRefs[8]}>
                 <PostIt/>
             </div>
-            <div ref={componentRefs[7]}>
+            <div ref={componentRefs[9]}>
                 <TheHub/>
             </div>
         </div>
