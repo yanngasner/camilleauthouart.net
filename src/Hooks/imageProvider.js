@@ -17,9 +17,6 @@ import africanRhymes2 from './../resources/africanRhymes2.jpg'
 import africanRhymes3 from './../resources/africanRhymes3.jpg'
 import africanRhymes4 from './../resources/africanRhymes4.jpg'
 import africanRhymes5 from './../resources/africanRhymes5.jpg'
-import worryBirds1 from './../resources/worryBirds1.jpg'
-import agnesMelody1 from './../resources/agnesMelody1.jpg'
-import europeForReal1 from './../resources/europeForReal1.jpg'
 import postIt1 from './../resources/postIt1.jpg'
 import postIt2 from './../resources/postIt2.jpg'
 import postIt3 from './../resources/postIt3.jpg'
@@ -29,7 +26,12 @@ import postIt6 from './../resources/postIt6.jpg'
 import postIt7 from './../resources/postIt7.jpg'
 import postIt8 from './../resources/postIt8.jpg'
 import postIt9 from './../resources/postIt9.jpg'
-import theHub1 from './../resources/theHub1.jpg'
+import authouart1 from './../resources/authouart1.jpg'
+import authouart2 from './../resources/authouart2.jpg'
+import authouart3 from './../resources/authouart3.jpg'
+import authouart4 from './../resources/authouart4.jpg'
+import authouart5 from './../resources/authouart5.jpg'
+import authouart6 from './../resources/authouart6.jpg'
 
 const archImages = [
     { index: 1, src: arch1, title: 'arch1', description: '' },
@@ -63,19 +65,19 @@ const africanRhymesImages = [
 ]
 
 const worryBirdsImages = [
-    { index: 1, src: worryBirds1, title: 'worryBirds1', description: '', url: 'https://www.youtube.com/watch?v=xkG4wtIHT-w' },
+    { index: 1, src: null, title: 'worryBirds', description: '', url: 'https://www.youtube.com/watch?v=xkG4wtIHT-w' },
 ]
 
 const agnesMelodyImages = [
-    { index: 1, src: agnesMelody1, title: 'agnesMelody1', description: '', url: 'https://vimeo.com/172420408' },
+    { index: 1, src: null, title: 'agnesMelody', description: '', url: 'https://vimeo.com/172420408' },
 ]
 
 const europeForRealImages = [
-    { index: 1, src: europeForReal1, title: 'europeForReal1', description: '', url: 'https://www.youtube.com/watch?v=eVNfFt_cssk' },
+    { index: 1, src: null, title: 'europeForReal', description: '', url: 'https://www.youtube.com/watch?v=eVNfFt_cssk' },
 ]
 
 const theHubImages = [
-    { index: 1, src: theHub1, title: 'theHub1', description: '', url: 'https://www.youtube.com/watch?v=n6J_AQEbFcM' },
+    { index: 1, src: null, title: 'theHub', description: '', url: 'https://www.youtube.com/watch?v=n6J_AQEbFcM' },
 ]
 
 const postItImages = [
@@ -88,7 +90,27 @@ const postItImages = [
     { index: 6, src: postIt8, title: 'postIt8', description: '' },
     { index: 8, src: postIt9, title: 'postIt9', description: '' },
     { index: 9, src: postIt1, title: 'postIt1', description: '', url: 'https://vimeo.com/188803957' },
+]
 
+const mediumsImages = [
+    { index: 1, src: null, title: 'mediums', description: '', url: 'https://vimeo.com/209577469' },
+]
+
+const spiegelmanImages = [
+    { index: 1, src: null, title: 'spiegelman', description: '', url: 'https://youtu.be/Ru-NMTSj_Ec' },
+]
+
+const deroubaixImages = [
+    { index: 1, src: null, title: 'deroubaix', description: '', url: 'https://youtu.be/NvN_kvpMV18' },
+]
+
+const authouartImages = [
+    { index: 1, src: authouart1, title: 'authouart1', description: '', url: 'https://vimeo.com/99809157' },
+    { index: 2, src: authouart2, title: 'authouart2', description: '', url: 'https://youtu.be/4kAX5sqnWHQ' },
+    { index: 3, src: authouart3, title: 'authouart3', description: '', url: 'https://youtu.be/S1gi-lCBWKs' },
+    { index: 4, src: authouart4, title: 'authouart4', description: '', url: 'https://youtu.be/xzoP_nwLNpo' },
+    { index: 5, src: authouart5, title: 'authouart5', description: '', url: 'https://youtu.be/UWm51P_o6bc' },
+    { index: 6, src: authouart6, title: 'authouart6', description: '', url: 'https://youtu.be/nt22sqBBEqA' },
 ]
 
 const imageProvider =
@@ -112,6 +134,14 @@ const imageProvider =
             return postItImages
         case 'theHub' :
             return theHubImages
+        case 'mediums' :
+            return mediumsImages
+        case 'spiegelman' :
+            return spiegelmanImages
+        case 'deroubaix' :
+            return deroubaixImages
+        case 'authouart' :
+            return authouartImages
         default :
         return null
     }

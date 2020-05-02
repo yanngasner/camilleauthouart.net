@@ -12,12 +12,16 @@ import EuropeForReal from "./Projects/EuropeForReal";
 import AfricanRhymes from "./Projects/AfricanRhymes";
 import PostIt from "./Projects/PostIt";
 import TheHub from "./Projects/TheHub";
+import Mediums from "./Projects/Mediums";
+import Spiegelman from "./Projects/Spiegelman";
+import Deroubaix from "./Projects/Deroubaix";
+import Authouart from "./Projects/Authouart";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
 
 function App() {
 
-    const [componentRefs, activeComponentId, onSelectedComponentChanged] = useActiveComponent(6);
+    const [componentRefs, activeComponentId, onSelectedComponentChanged] = useActiveComponent();
 
     return (
         <div className='App'>
@@ -50,6 +54,18 @@ function App() {
             </div>
             <div ref={componentRefs[9]}>
                 <TheHub/>
+            </div>
+            <div ref={componentRefs[10]}>
+                <Mediums/>
+            </div>
+            <div ref={componentRefs[11]}>
+                <Spiegelman/>
+            </div>
+            <div ref={componentRefs[12]}>
+                <Deroubaix/>
+            </div>
+            <div ref={componentRefs[13]}>
+                <Authouart/>
             </div>
         </div>
     );

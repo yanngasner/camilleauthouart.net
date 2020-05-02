@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
-function useActiveComponent(activeComponentsCount) {
+function useActiveComponent() {
 
     const ref0 = useRef(null)
     const ref1 = useRef(null)
@@ -12,7 +12,11 @@ function useActiveComponent(activeComponentsCount) {
     const ref7 = useRef(null)
     const ref8 = useRef(null)
     const ref9 = useRef(null)
-    const componentsRef = [ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9]
+    const ref10 = useRef(null)
+    const ref11 = useRef(null)
+    const ref12 = useRef(null)
+    const ref13 = useRef(null)
+    const componentsRef = [ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13]
     // const getComponentsRef = () => {
         //cannot useRef in a loop, fixed implem for a predefined components count
         //workaround not suitable : one ref per component needed
@@ -41,8 +45,8 @@ function useActiveComponent(activeComponentsCount) {
 
     useEffect(() => {
         //on scroll, set the active component regarding the scroll position
-        const handleScroll = (componentsRef, activeComponentsCount, navOffset) => {
-            for (var i = 1; i < activeComponentsCount; i++) {
+        const handleScroll = (componentsRef, navOffset) => {
+            for (var i = 1; i < componentsRef.length; i++) {
                 const refCurrent = componentsRef[i].current
                 if (!refCurrent)
                     return
@@ -53,15 +57,15 @@ function useActiveComponent(activeComponentsCount) {
                     return
                 }
             }
-            setActiveComponentId(activeComponentsCount)
+            setActiveComponentId(componentsRef.length)
         }
 
-        window.addEventListener('scroll', () => handleScroll(componentsRef, activeComponentsCount, navOffset))
+        window.addEventListener('scroll', () => handleScroll(componentsRef, navOffset))
 
         return () => {
-            window.removeEventListener('scroll', () => handleScroll(componentsRef, activeComponentsCount, navOffset))
+            window.removeEventListener('scroll', () => handleScroll(componentsRef, navOffset))
         }
-    }, [componentsRef, activeComponentsCount, navOffset])
+    }, [componentsRef, navOffset])
 
 
 
