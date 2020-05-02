@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import smoothscroll from 'smoothscroll-polyfill'
 
 function useActiveComponent() {
 
@@ -33,12 +34,14 @@ function useActiveComponent() {
     //provides the offset of the sticky navbar;
     const [navOffset, setNavOffset] = useState(0)
 
+    smoothscroll.polyfill();
+
     //autoscroll to the selected component div
     const onSelectedComponentChanged = id => {
         if (componentsRef[id].current) {
             let offsetTop = componentsRef[id].current.offsetTop;
             offsetTop = offsetTop - navOffset
-            window.scroll({ top: offsetTop, behavior: "smooth" })
+            window.scrollTo({ top: offsetTop, behavior: "smooth" })
         }
     }
 
