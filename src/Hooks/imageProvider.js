@@ -151,10 +151,10 @@ import movies44 from './../resources/movies44.jpg'
 
 
 const archImages = [
-    {index: 2, src: arch2, title: 'arch2', description: ''},
-    {index: 3, src: arch3, title: 'arch3', description: ''},
-    {index: 4, src: arch4, title: 'arch4', description: ''},
-    {index: 1, src: arch1, title: 'arch1', description: ''},
+    {index: 1, src: arch2, title: 'arch2', description: ''},
+    {index: 2, src: arch3, title: 'arch3', description: ''},
+    {index: 3, src: arch4, title: 'arch4', description: ''},
+    {index: 4, src: arch1, title: 'arch1', description: ''},
 ]
 
 const blindDeadsImages = [
