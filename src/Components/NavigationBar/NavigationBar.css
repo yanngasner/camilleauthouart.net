@@ -18,7 +18,7 @@
 }
 
 .title-container {
-    width: 300px;
+    width: 30%;
     margin: auto;
 }
 
@@ -58,8 +58,9 @@
         font-size: 0.75rem;
     }
 
-    .title-container {
-        width: 150px;
+    .nav-element {
+        padding : 0 0.5rem;
+        text-align: center;
     }
 }
 
