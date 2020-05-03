@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import './ResponsivePlayer.css'
+import {isIOS} from "react-device-detect";
 
 function ResponsivePlayer ({url, light}) {
     
@@ -12,7 +13,7 @@ function ResponsivePlayer ({url, light}) {
             width='100%'
             height='100%'
             light={light}
-            controls
+            controls={!isIOS}
           />
         </div>
       )
