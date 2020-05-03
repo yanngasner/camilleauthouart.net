@@ -1,15 +1,19 @@
 .slider-container {
     max-width: 700px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .slider-image-container {
     padding: 10px 10px;
-    height:100%;
-    width:100%;
-    display:flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.slider-image-container:hover {
+    cursor: pointer;
 }
 
 .arrow-container {
@@ -21,7 +25,7 @@
 .arrow-container img {
     width: 100%;
     height: 100%;
-    background:transparent;
+    background: transparent;
 }
 
 @media (max-width: 700px) {
@@ -29,6 +33,7 @@
     .slider-image-container {
         padding: 10px 5px;
     }
+
     .arrow-container {
         flex: 0 0 30px;
         height: 50px;

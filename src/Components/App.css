@@ -132,6 +132,7 @@ button {
 button:hover {
     text-decoration: underline;
     text-underline-position: under;
+    cursor:pointer;
 }
 
 button:hover, button:focus {

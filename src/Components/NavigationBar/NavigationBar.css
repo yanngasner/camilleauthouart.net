@@ -23,6 +23,11 @@
     margin: auto;
 }
 
+.title-container:hover {
+    cursor:pointer;
+}
+
+
 .nav-container ul {
     display: flex;
     list-style: none;
