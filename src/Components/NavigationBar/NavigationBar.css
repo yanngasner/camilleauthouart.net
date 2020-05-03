@@ -34,8 +34,6 @@
 .nav-element {
     padding : 0 1rem;
     text-align: center;
-
-
 }
 
 .nav-element button {
@@ -54,9 +52,14 @@
     color: var(--yellow)
 }
 
-@media (max-width: 800px) {
-    .nav-element {
+@media (max-width: 700px) {
+
+    .nav-element button {
         font-size: 0.75rem;
+    }
+
+    .title-container {
+        width: 150px;
     }
 }
 
