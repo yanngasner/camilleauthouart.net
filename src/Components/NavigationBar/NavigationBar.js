@@ -20,7 +20,7 @@ function NavigationBar({onSelectedComponentChanged, activeComponentId}) {
         <div className='nav-container'>
             <div className='inner-nav-container'>
                 <div className='title-container'>
-                    <img src={camilleAuthouart} alt='Logo'/>
+                    <img src={camilleAuthouart} alt='Logo' onClick={() => onClick(1)}/>
                 </div>
                 <ul>
                     <li><NavigationButton id={1} isActive={focusedButtonId >= 1 && focusedButtonId <= 4}

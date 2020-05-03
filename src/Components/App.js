@@ -20,8 +20,8 @@ import Authouart from "./Projects/Authouart";
 
 import PlayTime from "./Projects/PlayTime";
 import Aragon from "./Projects/Aragon";
-import Forests from "./Projects/Forests";
 import Movies from "./Projects/Movies";
+import Forests from "./Projects/Forests";
 
 import useActiveComponent from '../Hooks/useActiveComponent'
 
@@ -77,10 +77,10 @@ function App() {
                 <Aragon/>
             </div>
             <div ref={componentRefs[15]}>
-                <Forests/>
+                <Movies/>
             </div>
             <div ref={componentRefs[16]}>
-                <Movies/>
+                <Forests/>
             </div>
         </div>
     );

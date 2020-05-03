@@ -6,7 +6,8 @@ function Movies() {
     const description = () => {
         return (
             <div>
-                <h3>Pastels sur canson noir, de 12/16 cm à 20/30 cm,  2014</h3>
+                <h3>Série de pastels sur papier noir, de 12/16 cm à 20/30 cm,
+                    2014</h3>
             </div>
         )
     }
@@ -19,7 +20,6 @@ function Movies() {
             imagesKey={'movies'}
             description={description()}
             paragraph={paragraph()}
-            invertedProject
             useSlider
         />
     )

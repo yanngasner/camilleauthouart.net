@@ -6,20 +6,14 @@ function TheHub() {
     const description = () => {
         return (
             <div>
-                <h3>Coréalisé avec Mathilde Bédouet</h3>
-                <h3>Clip pour le groupe The HUB</h3>
+                <h3>Clip animé pour le groupe The Hub, rotoscopie et vidéo-projection, 3min30</h3>
+                <h3>Réalisation : Camille Authouart et Mathilde Bédouet</h3>
+                <h3>Production : L’Ogre, ZRP, 2014</h3>
             </div>
         )
     }
 
-    const paragraph = () => {
-        return (
-            <div>
-                <p>Technique: 2D numérique, rotoscopie et vidéoprojection</p>
-                <p>Production: L'OGRE, ZRP, 2014</p>
-            </div>
-        );
-    }
+    const paragraph = () => null
 
     return (
         <ProjectComponent

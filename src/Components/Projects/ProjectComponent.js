@@ -21,7 +21,7 @@ function ProjectComponent({imagesKey, title, description, paragraph, invertedPro
             <div className='project-text'>
                 <h2>{title}</h2>
                 {description}
-                <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>
+                {paragraph && <button className='show-more' onClick={toggleShowText}>{showTextLabel}</button>}
                 <div className='project-paragraph'>
                     {displayedParagraph()}
                 </div>

@@ -6,23 +6,19 @@ function Aragon() {
     const description = () => {
         return (
             <div>
-                <h3>Oissel-sur-Seine (76), Mai 2016</h3>
-                <h3>Re-création d'une fresque peinte de 110m2, devant le théatre Aragon</h3>
+                <h3>Création d'une fresque peinte de 110m2, devant le Théatre
+                    Aragon, à Oissel-sur-Seine (76), Mai 2016</h3>
+                <h3>Idée Originale : Daniel Authouart</h3>
+                <h3>Réalisation : Daniel Authouart, Camille Authouart, Marion Lacourt</h3>
             </div>
         )
     }
 
-    const paragraph = () => {
-        return (
-            <div>
-                <p>D'après une idée originale de Daniel Authouart, avec Camille Authouart, Marion Lacourt et Thierry Lopez</p>
-            </div>
-        );
-    }
+    const paragraph = () => null
 
     return (
         <ProjectComponent
-            title={"Aragon"}
+            title={"Fresque Aragon"}
             imagesKey={'aragon'}
             description={description()}
             paragraph={paragraph()}

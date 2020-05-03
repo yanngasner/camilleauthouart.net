@@ -6,9 +6,10 @@ function Mediums() {
     const description = () => {
         return (
             <div>
-                <h3>Projet en cours de financement, Lardux Films</h3>
-                <h3>Projet de film documentaire coréalisé avec Léa Troulard</h3>
-                <h3>Tout le monde aime les histoires</h3>
+                <h3>Documentaire 52 min, en production</h3>
+                <h3>Réalisation: Camille Authouart et Léa Troulard</h3>
+                <h3>Lardux Films, France 3 Normandie, 2020</h3>
+                <h3>Diffusion prévue : 2 Novembre 2020</h3>
             </div>
         )
     }

@@ -6,18 +6,25 @@ function AfricanRhymes() {
     const description = () => {
         return (
             <div>
-                <h3>Clips pour comptines centrafricaines</h3>
-                <h3>ARB Music Label</h3>
+                <h3>Clips animés pour comptines centrafricaines, 2D
+                    numérique, 5 x 2min</h3>
+                <h3>Réalisation : Camille Authouart</h3>
+                <h3>ARB Music Label, 2016</h3>
             </div>
         )
     }
 
     const paragraph = () => {
         return (
-            <p>5 clips réalisés en 2d numérique, 2016</p>
+            <div>
+                <p>Comptines d’Afrique travaille avec des musiciens de nombreux pays d’Afrique francophone,
+                    pour répertorier les comptines de chaque pays et le faire partager au monde entier. Les
+                    chansons sont adaptée aux maternelles, petits et bébés.</p>
+                <p>Découvrez plus de musique traditionnelle et de jeux de doigts pour la récréation ici :
+                    <a href='http://bit.ly/2S1Ec7u'> Youtube</a></p>
+            </div>
         );
     }
-
 
     return (
         <ProjectComponent
