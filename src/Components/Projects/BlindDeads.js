@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function BlindDeads() {
+function BlindDeads({isActive}) {
 
     const description = () => {
         return (
@@ -35,6 +35,7 @@ function BlindDeads() {
             imagesKey={'blindDeads'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             useSlider
         />
     )

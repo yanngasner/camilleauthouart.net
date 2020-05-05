@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Mediums() {
+function Mediums({isActive}) {
 
     const description = () => {
         return (
@@ -30,6 +30,7 @@ function Mediums() {
             imagesKey={'mediums'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             invertedProject
         />
     )

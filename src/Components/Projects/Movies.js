@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Movies() {
+function Movies({isActive}) {
 
     const description = () => {
         return (
@@ -20,6 +20,7 @@ function Movies() {
             imagesKey={'movies'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             useSlider
         />
     )

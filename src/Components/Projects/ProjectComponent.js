@@ -1,14 +1,24 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import useShowText from "../../Hooks/useShowText";
 import imageProvider from "../../Hooks/imageProvider";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer'
 
-function ProjectComponent({imagesKey, title, description, paragraph, invertedProject, useSlider}) {
+function ProjectComponent({imagesKey, title, description, paragraph, isActive, invertedProject, useSlider}) {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
     const [images] = useState(imageProvider(imagesKey))
     const [currentImage, setCurrentImage] = useState(images[0])
+    const [hasLoaded, setHasLoaded] = useState(false)
+
+    useEffect(() => {
+        if (!hasLoaded && isActive) {
+            images.forEach((image) => {
+                new Image().src = image
+            })
+            setHasLoaded(true)
+        }
+    }, [hasLoaded, isActive, images]);
 
     const onSelectionChanged = image => setCurrentImage(image)
 

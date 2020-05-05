@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Forests() {
+function Forests({isActive}) {
 
     const description = () => {
         return (
@@ -20,6 +20,7 @@ function Forests() {
             imagesKey={'forests'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             invertedProject
             useSlider
         />

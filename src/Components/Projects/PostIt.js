@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function PostIt() {
+function PostIt({isActive}) {
 
     const description = () => {
         return (
@@ -23,6 +23,7 @@ function PostIt() {
             imagesKey={'postIt'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             invertedProject
             useSlider
         />

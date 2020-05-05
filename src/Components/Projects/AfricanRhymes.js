@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function AfricanRhymes() {
+function AfricanRhymes({isActive}) {
 
     const description = () => {
         return (
@@ -32,6 +32,7 @@ function AfricanRhymes() {
             imagesKey={'africanRhymes'}
             description={description()}
             paragraph={paragraph()}
+            isActive={isActive}
             useSlider
         />
     )

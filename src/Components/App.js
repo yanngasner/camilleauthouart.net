@@ -35,52 +35,52 @@ function App() {
                            activeComponentId={activeComponentId}/>
             <div className='nav-area' ref={componentRefs[0]}/>
             <div ref={componentRefs[1]}>
-                <Crocodiles/>
+                <Crocodiles isActive={activeComponentId === 1}/>
             </div>
             <div ref={componentRefs[2]}>
-                <Arch/>
+                <Arch isActive={activeComponentId === 2}/>
             </div>
             <div ref={componentRefs[3]}>
-                <WorryBirds/>
+                <WorryBirds isActive={activeComponentId === 3}/>
             </div>
             <div ref={componentRefs[4]}>
-                <AgnesMelody/>
+                <AgnesMelody isActive={activeComponentId === 4}/>
             </div>
             <div ref={componentRefs[5]}>
-                <BlindDeads/>
+                <BlindDeads isActive={activeComponentId === 5}/>
             </div>
             <div ref={componentRefs[6]}>
-                <EuropeForReal/>
+                <EuropeForReal isActive={activeComponentId === 6}/>
             </div>
             <div ref={componentRefs[7]}>
-                <AfricanRhymes/>
+                <AfricanRhymes isActive={activeComponentId === 7}/>
             </div>
             <div ref={componentRefs[8]}>
-                <PostIt/>
+                <PostIt isActive={activeComponentId === 8}/>
             </div>
             <div ref={componentRefs[9]}>
-                <TheHub/>
+                <TheHub isActive={activeComponentId === 9}/>
             </div>
             <div ref={componentRefs[10]}>
-                <Mediums/>
+                <Mediums isActive={activeComponentId === 10}/>
             </div>
             <div ref={componentRefs[11]}>
-                <ArtRooms/>
+                <ArtRooms isActive={activeComponentId === 11}/>
             </div>
             <div ref={componentRefs[12]}>
-                <Authouart/>
+                <Authouart isActive={activeComponentId === 12}/>
             </div>
             <div ref={componentRefs[13]}>
-                <PlayTime/>
+                <PlayTime isActive={activeComponentId === 13}/>
             </div>
             <div ref={componentRefs[14]}>
-                <Aragon/>
+                <Aragon isActive={activeComponentId === 14}/>
             </div>
             <div ref={componentRefs[15]}>
-                <Movies/>
+                <Movies isActive={activeComponentId === 15}/>
             </div>
             <div ref={componentRefs[16]}>
-                <Forests/>
+                <Forests isActive={activeComponentId === 16}/>
             </div>
         </div>
     );
