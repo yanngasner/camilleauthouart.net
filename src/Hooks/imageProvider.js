@@ -240,7 +240,7 @@ const postItImages = [
     {index: 4, src: postIt5, title: 'postIt5', description: ''},
     {index: 5, src: postIt6, title: 'postIt6', description: ''},
     {index: 6, src: postIt7, title: 'postIt7', description: ''},
-    {index: 6, src: postIt8, title: 'postIt8', description: ''},
+    {index: 7, src: postIt8, title: 'postIt8', description: ''},
     {index: 8, src: postIt9, title: 'postIt9', description: ''},
     {index: 9, src: postIt1, title: 'postIt1', description: '', url: 'https://vimeo.com/188803957'},
 ]

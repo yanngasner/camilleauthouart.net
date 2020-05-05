@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import './ImageSlider.css'
 
-function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
+function ImageSliderElement({image, onSelected, focus, onNextSelected, hidden}) {
     
     const selectedRef = useRef(null)
     
@@ -34,10 +34,10 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected}) {
     }
 
     return (
-        <div className='slider-image-container'>
-            <img ref={selectedRef} className='slider-image' src={image.src} alt={`slide ${image.index}`}
+        <div className={`${hidden ? 'hidden-':''}slider-image-container`}>
+            {hidden ? <span></span> : <img ref={selectedRef} className='slider-image' src={image.src} alt={`slide ${image.index}`}
                 tabIndex={image.index}
-                onClick={onClick} onKeyDown={onKeyDown} />
+                onClick={onClick} onKeyDown={onKeyDown} />}
         </div>
     )
 }
