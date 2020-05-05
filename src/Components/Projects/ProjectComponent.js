@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import useShowText from "../../Hooks/useShowText";
 import imageProvider from "../../Hooks/imageProvider";
 import ImageSlider from "../ImageSlider/ImageSlider";
@@ -9,16 +9,6 @@ function ProjectComponent({imagesKey, title, description, paragraph, isActive, i
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
     const [images] = useState(imageProvider(imagesKey))
     const [currentImage, setCurrentImage] = useState(images[0])
-    const [hasLoaded, setHasLoaded] = useState(false)
-
-    useEffect(() => {
-        if (!hasLoaded && isActive) {
-            images.forEach((image) => {
-                new Image().src = image
-            })
-            setHasLoaded(true)
-        }
-    }, [hasLoaded, isActive, images]);
 
     const onSelectionChanged = image => setCurrentImage(image)
 
@@ -55,7 +45,7 @@ function ProjectComponent({imagesKey, title, description, paragraph, isActive, i
                     </div>
                 </div>
                 {useSlider && <div className='carousel-container'>
-                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} invertedProject={invertedProject}/>
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} isActive={isActive} invertedProject={invertedProject}/>
                 </div>}
             </div>
         )

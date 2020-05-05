@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './ImageSlider.css'
 import ImageSliderElement from './ImageSliderElement'
 import arrowGreenLeft from './../../resources/arrow-left-green.png'
@@ -7,9 +7,20 @@ import arrowYellowLeft from './../../resources/arrow-left-yellow.png'
 import arrowYellowRight from './../../resources/arrow-right-yellow.png'
 
 
-function ImageSlider({images, currentImage, onSelectionChanged, invertedProject}) {
+function ImageSlider({images, currentImage, onSelectionChanged, isActive, invertedProject}) {
 
     const [shouldFocus, setShouldFocus] = useState(false);
+
+    const [hasLoaded, setHasLoaded] = useState(false)
+
+    useEffect(() => {
+        if (!hasLoaded && isActive) {
+            images.forEach((image) => {
+                new Image().src = image.src
+            })
+            setHasLoaded(true)
+        }
+    }, [hasLoaded, isActive, images]);
 
     const onSelected = image => handleSelectionChanged(image)
 
