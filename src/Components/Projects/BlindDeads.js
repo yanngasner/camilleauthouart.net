@@ -8,6 +8,7 @@ function BlindDeads() {
             <div>
                 <h3>Western expérimental, 90 min</h3>
                 <h3>Réalisation : Julien Aubert</h3>
+                <h3>Auteure graphique et animation : Camille Authouart</h3>
                 <h3>Musique : Herman Dune</h3>
                 <h3>TCM Cinéma et Bigger Than Fiction, 2019</h3>
             </div>
