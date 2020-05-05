@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Authouart({isActive}) {
+function Authouart() {
 
     const description = () => {
         return (
@@ -29,7 +29,6 @@ function Authouart({isActive}) {
             imagesKey={'authouart'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             invertedProject
             useSlider
         />

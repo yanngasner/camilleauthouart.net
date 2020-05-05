@@ -4,7 +4,7 @@ import imageProvider from "../../Hooks/imageProvider";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import ResponsivePlayer from '../ResponsivePlayer/ResponsivePlayer'
 
-function ProjectComponent({imagesKey, title, description, paragraph, isActive, invertedProject, useSlider}) {
+function ProjectComponent({imagesKey, title, description, paragraph, invertedProject, useSlider}) {
 
     const [showText, showTextLabel, toggleShowText] = useShowText(false)
     const [images] = useState(imageProvider(imagesKey))
@@ -45,7 +45,7 @@ function ProjectComponent({imagesKey, title, description, paragraph, isActive, i
                     </div>
                 </div>
                 {useSlider && <div className='carousel-container'>
-                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} isActive={isActive} invertedProject={invertedProject}/>
+                    <ImageSlider images={images} currentImage={currentImage} onSelectionChanged={onSelectionChanged} invertedProject={invertedProject}/>
                 </div>}
             </div>
         )

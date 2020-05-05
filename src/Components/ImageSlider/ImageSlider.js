@@ -7,7 +7,7 @@ import arrowYellowLeft from './../../resources/arrow-left-yellow.png'
 import arrowYellowRight from './../../resources/arrow-right-yellow.png'
 
 
-function ImageSlider({images, currentImage, onSelectionChanged, isActive, invertedProject}) {
+function ImageSlider({images, currentImage, onSelectionChanged, invertedProject}) {
 
     const [shouldFocus, setShouldFocus] = useState(false);
 
@@ -31,16 +31,16 @@ function ImageSlider({images, currentImage, onSelectionChanged, isActive, invert
             <button className='arrow-container blue-arrow-container' onClick={() => onNextSelected(-1)}>
                 <img src={invertedProject ? arrowYellowLeft : arrowGreenLeft} alt='arrow'/>
             </button>
-            <ImageSliderElement image={isActive ? getImage(-4) : null} hidden/>
-            <ImageSliderElement image={isActive ? getImage(-3) : null} hidden/>
+            <ImageSliderElement image={getImage(-4)} hidden/>
+            <ImageSliderElement image={getImage(-3)} hidden/>
             <ImageSliderElement image={getImage(-2)} onSelected={onSelected} onNextSelected={onNextSelected}/>
             <ImageSliderElement image={getImage(-1)} onSelected={onSelected} onNextSelected={onNextSelected}/>
             <ImageSliderElement image={currentImage} focus={shouldFocus} onSelected={onSelected}
                                 onNextSelected={onNextSelected}/>
             <ImageSliderElement image={getImage(1)} onSelected={onSelected} onNextSelected={onNextSelected}/>
             <ImageSliderElement image={getImage(2)} onSelected={onSelected} onNextSelected={onNextSelected}/>
-            <ImageSliderElement image={isActive ? getImage(3) : null} hidden/>
-            <ImageSliderElement image={isActive ? getImage(4) : null} hidden/>
+            <ImageSliderElement image={getImage(3)} hidden/>
+            <ImageSliderElement image={getImage(4)} hidden/>
             <button className='arrow-container yellow-arrow-container' onClick={() => onNextSelected(1)}>
                 <img src={invertedProject ? arrowYellowRight : arrowGreenRight} alt='arrow'/>
             </button>

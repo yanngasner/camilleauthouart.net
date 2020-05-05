@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function WorryBirds({isActive}) {
+function WorryBirds() {
 
     const description = () => {
         return (
@@ -32,7 +32,6 @@ function WorryBirds({isActive}) {
             imagesKey={'agnesMelody'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             invertedProject
         />
     )

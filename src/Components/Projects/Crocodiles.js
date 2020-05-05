@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Crocodiles({isActive}) {
+function Crocodiles() {
 
     const description = () => {
         return (
@@ -32,7 +32,6 @@ function Crocodiles({isActive}) {
             imagesKey={'crocodiles'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             useSlider
         />
     )

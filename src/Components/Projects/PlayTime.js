@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function PlayTime({isActive}) {
+function PlayTime() {
 
     const description = () => {
         return (
@@ -33,7 +33,6 @@ function PlayTime({isActive}) {
             imagesKey={'playTime'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             useSlider
         />
     )

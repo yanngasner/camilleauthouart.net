@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function TheHub({isActive}) {
+function TheHub() {
 
     const description = () => {
         return (
@@ -21,7 +21,6 @@ function TheHub({isActive}) {
             imagesKey={'theHub'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
         />
     )
 }

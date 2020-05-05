@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function ArtRooms({isActive}) {
+function ArtRooms() {
 
     const description = () => {
         return (
@@ -31,7 +31,6 @@ function ArtRooms({isActive}) {
             imagesKey={'artRooms'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             useSlider
         />
     )

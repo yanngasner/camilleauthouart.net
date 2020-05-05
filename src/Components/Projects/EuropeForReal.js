@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function EuropeForReal({isActive}) {
+function EuropeForReal() {
 
     const description = () => {
         return (
@@ -31,7 +31,6 @@ function EuropeForReal({isActive}) {
             imagesKey={'europeForReal'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             invertedProject
         />
     )

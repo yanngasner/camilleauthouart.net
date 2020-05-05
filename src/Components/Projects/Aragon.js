@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Aragon({isActive}) {
+function Aragon() {
 
     const description = () => {
         return (
@@ -22,7 +22,6 @@ function Aragon({isActive}) {
             imagesKey={'aragon'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             invertedProject
             useSlider
         />

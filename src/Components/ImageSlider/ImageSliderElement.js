@@ -35,9 +35,9 @@ function ImageSliderElement({image, onSelected, focus, onNextSelected, hidden}) 
 
     return (
         <div className={`${hidden ? 'hidden-':''}slider-image-container`}>
-            {hidden ? <span></span> : <img ref={selectedRef} className='slider-image' src={image.src} alt={`slide ${image.index}`}
+            <img ref={selectedRef} className='slider-image' src={image.src} alt={`slide ${image.index}`}
                 tabIndex={image.index}
-                onClick={onClick} onKeyDown={onKeyDown} />}
+                onClick={onClick} onKeyDown={onKeyDown} />
         </div>
     )
 }

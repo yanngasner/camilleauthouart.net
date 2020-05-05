@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Arch({isActive}) {
+function Arch() {
 
     const description = () => {
         return (
@@ -36,7 +36,6 @@ function Arch({isActive}) {
             imagesKey={'arch'}
             description={description()}
             paragraph={paragraph()}
-            isActive={isActive}
             invertedProject
             useSlider
         />
