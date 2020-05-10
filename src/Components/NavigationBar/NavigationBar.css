@@ -27,7 +27,6 @@
     cursor:pointer;
 }
 
-
 .nav-container ul {
     display: flex;
     list-style: none;
@@ -49,7 +48,7 @@
     text-align: center;
 }
 
-.nav-element button:hover, .nav-element button:focus {
+.nav-element button:hover {
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -70,6 +69,12 @@
     }
 }
 
+@media (max-width: 500px) {
+
+    .nav-element button {
+        font-size: 0.6rem;
+    }
+}
 
 
 
