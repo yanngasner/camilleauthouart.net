@@ -35,6 +35,9 @@ function NavigationBar({onSelectedComponentChanged, activeComponentId}) {
                     <li><NavigationButton id={13} isActive={focusedButtonId >= 13 && focusedButtonId <= 16}
                                           text="Dessins" onClick={onClick}/>
                     </li>
+                    <li><NavigationButton id={17} isActive={focusedButtonId >= 17 && focusedButtonId <= 17}
+                                          text="Contact" onClick={onClick}/>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -23,6 +23,8 @@ import Aragon from "./Projects/Aragon";
 import Movies from "./Projects/Movies";
 import Forests from "./Projects/Forests";
 
+import Contact from "./Projects/Contact";
+
 import useActiveComponent from '../Hooks/useActiveComponent'
 
 function App() {
@@ -81,6 +83,9 @@ function App() {
             </div>
             <div ref={componentRefs[16]}>
                 <Forests/>
+            </div>
+            <div ref={componentRefs[17]}>
+                <Contact/>
             </div>
         </div>
     );

@@ -159,6 +159,15 @@ button:hover, button:focus {
     color: var(--yellow);
 }
 
+.contact-container {
+    margin : 0 auto;
+    text-align: center;
+}
+
+.contact-container h3 {
+    margin: 2rem auto;
+}
+
 .project-text button {
     width: 100%;
     font-weight: bold;
