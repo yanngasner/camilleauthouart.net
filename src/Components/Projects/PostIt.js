@@ -10,7 +10,7 @@ function PostIt() {
                 <h3>Réalisation : Nicolas Mongin</h3>
                 <h3>Décors et animation: Camille Authouart et Lila Poppins</h3>
                 <h3>Making off : Léa Troulard</h3>
-                <h3>Production: Les Monstres, 2016</h3>
+                <h3>Production : Les Monstres, 2016</h3>
             </div>
         )
     }

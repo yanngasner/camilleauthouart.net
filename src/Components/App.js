@@ -3,6 +3,7 @@ import './App.css'
 
 import NavigationBar from './NavigationBar/NavigationBar'
 
+import Lac from './Projects/Lac'
 import Arch from './Projects/Arch'
 import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
@@ -37,54 +38,57 @@ function App() {
                            activeComponentId={activeComponentId}/>
             <div className='nav-area' ref={componentRefs[0]}/>
             <div ref={componentRefs[1]}>
-                <Crocodiles/>
-            </div>
-            <div ref={componentRefs[2]}>
                 <Arch/>
             </div>
+            <div ref={componentRefs[2]}>
+                <Crocodiles/>
+            </div>
             <div ref={componentRefs[3]}>
-                <WorryBirds/>
+                <Lac/>
             </div>
             <div ref={componentRefs[4]}>
-                <AgnesMelody/>
+                <WorryBirds/>
             </div>
             <div ref={componentRefs[5]}>
-                <BlindDeads/>
+                <AgnesMelody/>
             </div>
             <div ref={componentRefs[6]}>
-                <EuropeForReal/>
+                <BlindDeads/>
             </div>
             <div ref={componentRefs[7]}>
-                <AfricanRhymes/>
+                <EuropeForReal/>
             </div>
             <div ref={componentRefs[8]}>
-                <PostIt/>
+                <AfricanRhymes/>
             </div>
             <div ref={componentRefs[9]}>
-                <TheHub/>
+                <PostIt/>
             </div>
             <div ref={componentRefs[10]}>
-                <Mediums/>
+                <TheHub/>
             </div>
             <div ref={componentRefs[11]}>
-                <ArtRooms/>
+                <Mediums/>
             </div>
             <div ref={componentRefs[12]}>
-                <Authouart/>
+                <ArtRooms/>
             </div>
             <div ref={componentRefs[13]}>
-                <PlayTime/>
+                <Authouart/>
             </div>
             <div ref={componentRefs[14]}>
-                <Aragon/>
+                <PlayTime/>
             </div>
             <div ref={componentRefs[15]}>
-                <Movies/>
+                <Aragon/>
             </div>
             <div ref={componentRefs[16]}>
-                <Forests/>
+                <Movies/>
             </div>
             <div ref={componentRefs[17]}>
+                <Forests/>
+            </div>
+            <div ref={componentRefs[18]}>
                 <Contact/>
             </div>
         </div>

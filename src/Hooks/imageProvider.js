@@ -1,3 +1,13 @@
+import lac1 from './../resources/lac1.jpg'
+import lac2 from './../resources/lac2.jpg'
+import lac3 from './../resources/lac3.jpg'
+import lac4 from './../resources/lac4.jpg'
+import lac5 from './../resources/lac5.jpg'
+import lac6 from './../resources/lac6.jpg'
+import lac7 from './../resources/lac7.jpg'
+import lac8 from './../resources/lac8.jpg'
+import lac9 from './../resources/lac9.jpg'
+
 import arch1 from './../resources/arch1.jpg'
 import arch2 from './../resources/arch2.jpg'
 import arch3 from './../resources/arch3.jpg'
@@ -152,6 +162,18 @@ import movies42 from './../resources/movies42.jpg'
 import movies43 from './../resources/movies43.jpg'
 import movies44 from './../resources/movies44.jpg'
 
+const lacImages = [
+    {index: 1, src: lac1, title: 'lac1', description: ''},
+    {index: 2, src: lac4, title: 'lac4', description: ''},
+    {index: 3, src: lac5, title: 'lac5', description: ''},
+    {index: 4, src: lac6, title: 'lac6', description: ''},
+    {index: 5, src: lac8, title: 'lac8', description: ''},
+    {index: 6, src: lac3, title: 'lac3', description: ''},
+    {index: 7, src: lac9, title: 'lac9', description: ''},
+    {index: 8, src: lac2, title: 'lac2', description: ''},
+    {index: 9, src: lac7, title: 'lac7', description: ''},
+
+]
 
 const archImages = [
     {index: 1, src: arch6, title: 'arch6', description: ''},
@@ -252,7 +274,7 @@ const postItImages = [
 ]
 
 const mediumsImages = [
-    {index: 1, src: null, title: 'mediums', description: '', url: 'https://vimeo.com/209577469'},
+    {index: 1, src: null, title: 'mediums', description: '', url: 'https://vimeo.com/493718474'},
 ]
 
 const artRoomsImages = [
@@ -388,6 +410,8 @@ const moviesImages = [
 const imageProvider =
     (project) => {
         switch (project) {
+            case 'lac' :
+                return lacImages
             case 'arch' :
                 return archImages
             case 'blindDeads' :
