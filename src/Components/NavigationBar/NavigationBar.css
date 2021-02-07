@@ -57,7 +57,24 @@
     color: var(--yellow)
 }
 
-@media (max-width: 700px) {
+.nav-full {
+    display: inline;
+}
+.nav-short {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .nav-full {
+        display: none;
+    }
+    .nav-short {
+        display: inline;
+    }
+}
+
+@media (max-width: 800px) {
 
     .nav-element button {
         font-size: 0.75rem;
