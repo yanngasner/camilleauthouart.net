@@ -3,7 +3,7 @@ import './App.css'
 
 import NavigationBar from './NavigationBar/NavigationBar'
 
-import Lac from './Projects/Lac'
+import Lake from './Projects/Lake'
 import Arch from './Projects/Arch'
 import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
@@ -44,7 +44,7 @@ function App() {
                 <Crocodiles/>
             </div>
             <div ref={componentRefs[3]}>
-                <Lac/>
+                <Lake/>
             </div>
             <div ref={componentRefs[4]}>
                 <WorryBirds/>

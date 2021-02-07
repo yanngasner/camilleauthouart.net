@@ -1,12 +1,12 @@
-import lac1 from './../resources/lac1.jpg'
-import lac2 from './../resources/lac2.jpg'
-import lac3 from './../resources/lac3.jpg'
-import lac4 from './../resources/lac4.jpg'
-import lac5 from './../resources/lac5.jpg'
-import lac6 from './../resources/lac6.jpg'
-import lac7 from './../resources/lac7.jpg'
-import lac8 from './../resources/lac8.jpg'
-import lac9 from './../resources/lac9.jpg'
+import lake1 from './../resources/lake1.jpg'
+import lake2 from './../resources/lake2.jpg'
+import lake3 from './../resources/lake3.jpg'
+import lake4 from './../resources/lake4.jpg'
+import lake5 from './../resources/lake5.jpg'
+import lake6 from './../resources/lake6.jpg'
+import lake7 from './../resources/lake7.jpg'
+import lake8 from './../resources/lake8.jpg'
+import lake9 from './../resources/lake9.jpg'
 
 import arch1 from './../resources/arch1.jpg'
 import arch2 from './../resources/arch2.jpg'
@@ -162,16 +162,16 @@ import movies42 from './../resources/movies42.jpg'
 import movies43 from './../resources/movies43.jpg'
 import movies44 from './../resources/movies44.jpg'
 
-const lacImages = [
-    {index: 1, src: lac1, title: 'lac1', description: ''},
-    {index: 2, src: lac4, title: 'lac4', description: ''},
-    {index: 3, src: lac5, title: 'lac5', description: ''},
-    {index: 4, src: lac6, title: 'lac6', description: ''},
-    {index: 5, src: lac8, title: 'lac8', description: ''},
-    {index: 6, src: lac3, title: 'lac3', description: ''},
-    {index: 7, src: lac9, title: 'lac9', description: ''},
-    {index: 8, src: lac2, title: 'lac2', description: ''},
-    {index: 9, src: lac7, title: 'lac7', description: ''},
+const lakeImages = [
+    {index: 1, src: lake1, title: 'lake1', description: ''},
+    {index: 2, src: lake4, title: 'lake4', description: ''},
+    {index: 3, src: lake5, title: 'lake5', description: ''},
+    {index: 4, src: lake6, title: 'lake6', description: ''},
+    {index: 5, src: lake8, title: 'lake8', description: ''},
+    {index: 6, src: lake3, title: 'lake3', description: ''},
+    {index: 7, src: lake9, title: 'lake9', description: ''},
+    {index: 8, src: lake2, title: 'lake2', description: ''},
+    {index: 9, src: lake7, title: 'lake7', description: ''},
 
 ]
 
@@ -410,8 +410,8 @@ const moviesImages = [
 const imageProvider =
     (project) => {
         switch (project) {
-            case 'lac' :
-                return lacImages
+            case 'lake' :
+                return lakeImages
             case 'arch' :
                 return archImages
             case 'blindDeads' :

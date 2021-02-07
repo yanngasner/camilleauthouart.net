@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectComponent from "./ProjectComponent";
 
-function Lac() {
+function Lake() {
 
     const description = () => {
         return (
@@ -32,8 +32,8 @@ function Lac() {
 
     return (
         <ProjectComponent
-            title={'Lac'}
-            imagesKey={'lac'}
+            title={'Juste au bord du Lac'}
+            imagesKey={'lake'}
             description={description()}
             paragraph={paragraph()}
             invertedProject
@@ -42,4 +42,4 @@ function Lac() {
     )
 }
 
-export default Lac
+export default Lake
