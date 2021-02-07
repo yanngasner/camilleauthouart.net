@@ -93,5 +93,12 @@
     }
 }
 
+@media (max-width: 400px) {
+
+    .nav-element button {
+        font-size: 0.5rem;
+    }
+}
+
 
 
