@@ -89,14 +89,14 @@
 @media (max-width: 500px) {
 
     .nav-element button {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 }
 
 @media (max-width: 400px) {
 
     .nav-element button {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 }
 
