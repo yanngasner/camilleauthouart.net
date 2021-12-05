@@ -224,7 +224,7 @@ const africanRhymesImages = [
 ]
 
 const worryBirdsImages = [
-    {index: 1, src: null, title: 'worryBirds', description: '', url: 'https://www.youtube.com/watch?v=xkG4wtIHT-w'},
+    {index: 1, src: null, title: 'worryBirds', description: '', url: 'https://www.youtube.com/watch?v=uZyws-M6d5s'},
 ]
 
 const agnesMelodyImages = [
