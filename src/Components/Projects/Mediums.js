@@ -6,10 +6,10 @@ function Mediums() {
     const description = () => {
         return (
             <div>
-                <h3>Documentaire 52 min, en production</h3>
-                <h3>Réalisation: Camille Authouart et Léa Troulard</h3>
-                <h3>Lardux Films, France 3 Normandie, 2020</h3>
-                <h3>Diffusion prévue : 2 Novembre 2020</h3>
+                <h3>Documentaire 52 min (prises de vue réelle et animation)</h3>
+                <h3>Réalisation : Camille Authouart et Léa Troulard</h3>
+                <h3>Lardux Films, France Télévisions</h3>
+                <h3>Diffusé en Janvier 2021 sur France 3 Régions</h3>
             </div>
         )
     }
