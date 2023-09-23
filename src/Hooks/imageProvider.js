@@ -15,6 +15,7 @@ import arch4 from './../resources/arch4.jpg'
 import arch5 from './../resources/arch5.jpg'
 import arch6 from './../resources/arch6.jpg'
 import arch7 from './../resources/arch7.jpg'
+import arch8 from './../resources/arch8.jpg'
 
 import blindDeads1 from './../resources/blindDeads1.jpg'
 import blindDeads2 from './../resources/blindDeads2.jpg'
@@ -176,13 +177,26 @@ const lakeImages = [
 ]
 
 const archImages = [
-    {index: 1, src: arch6, title: 'arch6', description: ''},
-    {index: 2, src: arch5, title: 'arch5', description: ''},
-    {index: 3, src: arch7, title: 'arch7', description: ''},
-    {index: 4, src: arch2, title: 'arch2', description: ''},
-    {index: 5, src: arch3, title: 'arch3', description: ''},
-    {index: 6, src: arch4, title: 'arch4', description: ''},
-    {index: 7, src: arch1, title: 'arch1', description: ''},
+    {
+        index: 1,
+        src: arch7,
+        title: 'arch7',
+        description: '',
+        url: 'https://www.youtube.com/watch?v=w6rlIvY1Ah4'
+    },
+    {index: 2, src: arch1, title: 'arch1', description: ''},
+    {index: 3, src: arch2, title: 'arch2', description: ''},
+    {index: 4, src: arch3, title: 'arch3', description: ''},
+    {index: 5, src: arch4, title: 'arch4', description: ''},
+    {index: 6, src: arch5, title: 'arch5', description: ''},
+    {index: 7, src: arch6, title: 'arch6', description: ''},
+    {
+        index: 8,
+        src: arch8,
+        title: 'arch8',
+        description: '',
+        url: 'https://www.youtube.com/watch?v=p2woFcoADys'
+    },
 ]
 
 const blindDeadsImages = [
