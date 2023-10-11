@@ -51,6 +51,7 @@ import authouart3 from './../resources/authouart3.jpg'
 import authouart4 from './../resources/authouart4.jpg'
 import authouart5 from './../resources/authouart5.jpg'
 import authouart6 from './../resources/authouart6.jpg'
+import authouart7 from './../resources/authouart7.jpg'
 
 import artRooms1 from './../resources/artRoom1.jpg'
 import artRooms2 from './../resources/artRoom2.jpg'
@@ -299,12 +300,13 @@ const artRoomsImages = [
 ]
 
 const authouartImages = [
-    {index: 1, src: authouart1, title: 'authouart1', description: '', url: 'https://vimeo.com/99809157'},
-    {index: 2, src: authouart2, title: 'authouart2', description: '', url: 'https://youtu.be/4kAX5sqnWHQ'},
-    {index: 3, src: authouart3, title: 'authouart3', description: '', url: 'https://youtu.be/S1gi-lCBWKs'},
-    {index: 4, src: authouart4, title: 'authouart4', description: '', url: 'https://youtu.be/xzoP_nwLNpo'},
-    {index: 5, src: authouart5, title: 'authouart5', description: '', url: 'https://youtu.be/UWm51P_o6bc'},
-    {index: 6, src: authouart6, title: 'authouart6', description: '', url: 'https://youtu.be/nt22sqBBEqA'},
+    {index: 1, src: authouart7, title: 'authouart7', description: '', url: 'https://vimeo.com/872501120'},
+    {index: 2, src: authouart1, title: 'authouart1', description: '', url: 'https://vimeo.com/99809157'},
+    {index: 3, src: authouart2, title: 'authouart2', description: '', url: 'https://youtu.be/4kAX5sqnWHQ'},
+    {index: 4, src: authouart3, title: 'authouart3', description: '', url: 'https://youtu.be/S1gi-lCBWKs'},
+    {index: 5, src: authouart4, title: 'authouart4', description: '', url: 'https://youtu.be/xzoP_nwLNpo'},
+    {index: 6, src: authouart5, title: 'authouart5', description: '', url: 'https://youtu.be/UWm51P_o6bc'},
+    {index: 7, src: authouart6, title: 'authouart6', description: '', url: 'https://youtu.be/nt22sqBBEqA'},
 ]
 
 const playTimeImages = [

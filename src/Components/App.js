@@ -68,13 +68,13 @@ function App() {
                 <TheHub/>
             </div>
             <div ref={componentRefs[11]}>
-                <Mediums/>
+                <Authouart/>
             </div>
             <div ref={componentRefs[12]}>
                 <ArtRooms/>
             </div>
             <div ref={componentRefs[13]}>
-                <Authouart/>
+                <Mediums/>
             </div>
             <div ref={componentRefs[14]}>
                 <PlayTime/>
