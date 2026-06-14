@@ -164,6 +164,7 @@ import movies42 from './../resources/movies42.jpg'
 import movies43 from './../resources/movies43.jpg'
 import movies44 from './../resources/movies44.jpg'
 
+
 const lakeImages = [
     {index: 1, src: lake1, title: 'lake1', description: ''},
     {index: 2, src: lake4, title: 'lake4', description: ''},
@@ -174,7 +175,6 @@ const lakeImages = [
     {index: 7, src: lake9, title: 'lake9', description: ''},
     {index: 8, src: lake2, title: 'lake2', description: ''},
     {index: 9, src: lake7, title: 'lake7', description: ''},
-
 ]
 
 const archImages = [
@@ -426,10 +426,12 @@ const moviesImages = [
 const imageProvider =
     (project) => {
         switch (project) {
+            case 'nenette':
             case 'lake' :
                 return lakeImages
             case 'arch' :
                 return archImages
+            case 'aiff' :
             case 'blindDeads' :
                 return blindDeadsImages
             case 'crocodiles' :
@@ -450,6 +452,7 @@ const imageProvider =
                 return mediumsImages
             case 'artRooms' :
                 return artRoomsImages
+            case 'fatherOrArtist' :    
             case 'authouart' :
                 return authouartImages
             case 'playTime' :

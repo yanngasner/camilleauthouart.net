@@ -3,12 +3,14 @@ import './App.css'
 
 import NavigationBar from './NavigationBar/NavigationBar'
 
+import Nenette from './Projects/Nenette'
 import Lake from './Projects/Lake'
 import Arch from './Projects/Arch'
 import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
 import AgnesMelody from "./Projects/AgnesMelody";
 
+import Aiff from './Projects/Aiff'
 import BlindDeads from './Projects/BlindDeads'
 import EuropeForReal from "./Projects/EuropeForReal";
 import AfricanRhymes from "./Projects/AfricanRhymes";
@@ -18,6 +20,7 @@ import TheHub from "./Projects/TheHub";
 import Mediums from "./Projects/Mediums";
 import ArtRooms from "./Projects/ArtRooms";
 import Authouart from "./Projects/Authouart";
+import FatherOrArtist from './Projects/FatherOrArtist'
 
 import PlayTime from "./Projects/PlayTime";
 import Aragon from "./Projects/Aragon";
@@ -38,57 +41,66 @@ function App() {
                            activeComponentId={activeComponentId}/>
             <div className='nav-area' ref={componentRefs[0]}/>
             <div ref={componentRefs[1]}>
-                <Arch/>
+                <Nenette/>
             </div>
             <div ref={componentRefs[2]}>
-                <Crocodiles/>
+                <Arch/>
             </div>
             <div ref={componentRefs[3]}>
-                <Lake/>
+                <Crocodiles/>
             </div>
             <div ref={componentRefs[4]}>
-                <WorryBirds/>
+                <Lake/>
             </div>
             <div ref={componentRefs[5]}>
-                <AgnesMelody/>
+                <WorryBirds/>
             </div>
             <div ref={componentRefs[6]}>
-                <BlindDeads/>
+                <AgnesMelody/>
             </div>
             <div ref={componentRefs[7]}>
-                <EuropeForReal/>
+                <Aiff/>
             </div>
             <div ref={componentRefs[8]}>
-                <AfricanRhymes/>
-            </div>
-            <div ref={componentRefs[9]}>
                 <PostIt/>
             </div>
+            <div ref={componentRefs[9]}>
+                <BlindDeads/>
+            </div>
             <div ref={componentRefs[10]}>
-                <TheHub/>
+                <EuropeForReal/>
             </div>
             <div ref={componentRefs[11]}>
-                <Authouart/>
+                <AfricanRhymes/>
             </div>
             <div ref={componentRefs[12]}>
-                <ArtRooms/>
+                <TheHub/>
             </div>
             <div ref={componentRefs[13]}>
-                <Mediums/>
+                <FatherOrArtist/>
             </div>
             <div ref={componentRefs[14]}>
-                <PlayTime/>
+                <Authouart/>
             </div>
             <div ref={componentRefs[15]}>
-                <Aragon/>
+                <ArtRooms/>
             </div>
             <div ref={componentRefs[16]}>
-                <Movies/>
+                <Mediums/>
             </div>
             <div ref={componentRefs[17]}>
-                <Forests/>
+                <PlayTime/>
             </div>
             <div ref={componentRefs[18]}>
+                <Aragon/>
+            </div>
+            <div ref={componentRefs[19]}>
+                <Movies/>
+            </div>
+            <div ref={componentRefs[20]}>
+                <Forests/>
+            </div>
+            <div ref={componentRefs[21]}>
                 <Contact/>
             </div>
         </div>

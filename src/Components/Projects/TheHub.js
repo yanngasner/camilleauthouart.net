@@ -21,6 +21,7 @@ function TheHub() {
             imagesKey={'theHub'}
             description={description()}
             paragraph={paragraph()}
+            invertedProject
         />
     )
 }

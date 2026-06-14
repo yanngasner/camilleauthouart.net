@@ -22,10 +22,14 @@ function useActiveComponent() {
     const ref16 = useRef(null)
     const ref17 = useRef(null)
     const ref18 = useRef(null)
+    const ref19 = useRef(null)
+    const ref20 = useRef(null)
+    const ref21 = useRef(null)
 
     const componentsRef = useMemo(() => [
         ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9,
-        ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18
+        ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18,
+        ref19, ref20, ref21
     // eslint-disable-next-line react-hooks/exhaustive-deps
     ], [])
 
