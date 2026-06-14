@@ -3,16 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-device-detect": "^1.12.1",
-    "react-dom": "^16.13.1",
-    "react-player": "^1.15.3",
-    "react-scripts": "3.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-player": "^2.16.0",
     "smoothscroll-polyfill": "^0.4.4",
-    "styled-components": "^5.1.0"
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
