@@ -7,7 +7,6 @@ function Lake() {
         return (
             <div>
                 <h3>Court-métrage d'animation en stop-motion et 2D traditionnelle</h3>
-                <h3>En développement</h3>
                 <h3>Réalisation : Camille Authouart</h3>
                 <h3>Coproduction : Papy 3D et JPL Films, 2021</h3>
             </div>

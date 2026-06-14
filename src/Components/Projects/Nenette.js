@@ -6,10 +6,9 @@ function Nenette() {
     const description = () => {
         return (
             <div>
-                <h3>Court-métrage d'animation en 2D traditionnelle et numérique, 12 min</h3>
-                <h3>Réalisation : Camille Authouart</h3>
-                <h3>MIYU Productions, 2022</h3>
-                <h3>Sélections : Annecy 2023, Clermont-Ferrand 2023, IFFR 2022, ...</h3>
+                <h3>Court métrage d’animation co réalisé avec Marion Peltier.</h3>
+                <h3>Produit par Les films Norfolk et Dandeloo.</h3>
+                <h3>En développement,  production fin 2026.</h3>
             </div>
         )
     }
@@ -17,16 +16,11 @@ function Nenette() {
     const paragraph = () => {
         return (
             <div>
-                <p>Ce projet a bénéficié d'une résidence d'écriture à l'Abbaye de
-                    Fontevraud, obtenu le FAIA du CNC et a été présenté aux sessions de Pitchs des festivals
-                    d'animation de Rennes et d'Annecy.</p>
+                <p>Synopsis</p>
                 <br></br>
-                <p>L’histoire se déroule à la Défense, à Paris. </p>
-                <p>Dans l’ombre de ce quartier austère, symbole de puissance et de modernité, se cachent deux
-                    poètes : un homme sans maison et une gigantesque Araignée de métal rouge.</p>
-                <p>Durant la journée, ils sont comme invisible, si petits parmi les gratte-ciels. Mais c’est la nuit,
-                    quand tout semble désert et que les étoiles se confondent avec les fenêtres des plus hautes
-                    tours, qu’on les observe le mieux ...</p>
+                <p>Chère Nénette,</p>
+                <p>Séparée de ta mère vers l’âge de trois ans et déracinée de ton pays natal, tu as su t’adapter à ta condition, malgré les épreuves qui ont échelonné ta vie. Tu t’es construite ici, parmi nous. Mère de trois petits, tu es aujourd’hui arrière-grand-mère. Malgré ton arthrose tu dessines beaucoup et brosse volontiers ta frange quand on te tend un peigne. Ton histoire est celle
+d’une personnalité forte, drôle, et résiliente. Et même si c’est toujours moi qui viens te voir, je n’oublie pas que tu me regardes aussi.</p>
             </div>
         );
     }
@@ -38,6 +32,7 @@ function Nenette() {
             description={description()}
             paragraph={paragraph()}
             useSlider
+            invertedProject
         />
     )
 }

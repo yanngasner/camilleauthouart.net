@@ -1,3 +1,10 @@
+import nenette1 from './../resources/nenette1.png'
+import nenette2 from './../resources/nenette2.png'
+import nenette3 from './../resources/nenette3.png'
+import nenette4 from './../resources/nenette4.jpg'
+import nenette5 from './../resources/nenette5.png'
+import nenette6 from './../resources/nenette6.png'
+
 import lake1 from './../resources/lake1.jpg'
 import lake2 from './../resources/lake2.jpg'
 import lake3 from './../resources/lake3.jpg'
@@ -16,6 +23,19 @@ import arch5 from './../resources/arch5.jpg'
 import arch6 from './../resources/arch6.jpg'
 import arch7 from './../resources/arch7.jpg'
 import arch8 from './../resources/arch8.jpg'
+
+import aif1 from './../resources/aif1.jpg'
+import aif2 from './../resources/aif2.png'
+import aif3 from './../resources/aif3.jpg'
+import aif4 from './../resources/aif4.jpg'
+import aif5 from './../resources/aif5.jpg'
+import aif6 from './../resources/aif6.jpg'
+import aif7 from './../resources/aif7.jpg'
+import aif8 from './../resources/aif8.jpg'
+import aif9 from './../resources/aif9.jpg'
+import aif10 from './../resources/aif10.jpg'
+import aif11 from './../resources/aif11.jpg'
+import aif12 from './../resources/aif12.jpg'
 
 import blindDeads1 from './../resources/blindDeads1.jpg'
 import blindDeads2 from './../resources/blindDeads2.jpg'
@@ -44,6 +64,14 @@ import postIt6 from './../resources/postIt6.jpg'
 import postIt7 from './../resources/postIt7.jpg'
 import postIt8 from './../resources/postIt8.jpg'
 import postIt9 from './../resources/postIt9.jpg'
+
+import fatherOrArtist1 from './../resources/fatherOrArtist1.png'
+import fatherOrArtist2 from './../resources/fatherOrArtist2.jpg'
+import fatherOrArtist3 from './../resources/fatherOrArtist3.png'
+import fatherOrArtist4 from './../resources/fatherOrArtist4.png'
+import fatherOrArtist5 from './../resources/fatherOrArtist5.png'
+import fatherOrArtist6 from './../resources/fatherOrArtist6.png'
+import fatherOrArtist7 from './../resources/fatherOrArtist7.jpg'
 
 import authouart1 from './../resources/authouart1.jpg'
 import authouart2 from './../resources/authouart2.jpg'
@@ -165,6 +193,15 @@ import movies43 from './../resources/movies43.jpg'
 import movies44 from './../resources/movies44.jpg'
 
 
+const nenetteImages = [
+    {index: 1, src: nenette1, title: 'nenette1', description: ''},
+    {index: 2, src: nenette2, title: 'nenette2', description: ''},
+    {index: 3, src: nenette3, title: 'nenette3', description: ''},
+    {index: 4, src: nenette4, title: 'nenette4', description: ''},
+    {index: 5, src: nenette5, title: 'nenette5', description: ''},
+    {index: 6, src: nenette6, title: 'nenette6', description: ''},
+];
+
 const lakeImages = [
     {index: 1, src: lake1, title: 'lake1', description: ''},
     {index: 2, src: lake4, title: 'lake4', description: ''},
@@ -183,7 +220,7 @@ const archImages = [
         src: arch7,
         title: 'arch7',
         description: '',
-        url: 'https://www.youtube.com/watch?v=w6rlIvY1Ah4'
+        url: 'https://www.youtube.com/watch?v=SRL4jELEY88'
     },
     {index: 2, src: arch1, title: 'arch1', description: ''},
     {index: 3, src: arch2, title: 'arch2', description: ''},
@@ -198,6 +235,21 @@ const archImages = [
         description: '',
         url: 'https://www.youtube.com/watch?v=p2woFcoADys'
     },
+]
+
+const aifImages = [
+    {index: 1, src: aif1, title: 'aif1', description: ''},
+    {index: 2, src: aif2, title: 'aif2', description: ''},
+    {index: 3, src: aif3, title: 'aif3', description: ''},
+    {index: 4, src: aif4, title: 'aif4', description: ''},
+    {index: 5, src: aif5, title: 'aif5', description: ''},
+    {index: 6, src: aif6, title: 'aif6', description: ''},
+    {index: 7, src: aif7, title: 'aif7', description: ''},
+    {index: 8, src: aif8, title: 'aif8', description: ''},
+    {index: 9, src: aif9, title: 'aif9', description: ''},
+    {index: 10, src: aif10, title: 'aif10', description: ''},
+    {index: 11, src: aif11, title: 'aif11', description: ''},
+    {index: 12, src: aif12, title: 'aif12', description: ''},
 ]
 
 const blindDeadsImages = [
@@ -297,6 +349,16 @@ const artRoomsImages = [
     {index: 2, src: artRooms2, title: 'artRooms2', description: '', url: 'https://youtu.be/NvN_kvpMV18'},
     {index: 3, src: artRooms3, title: 'artRooms3', description: '', url: 'https://www.youtube.com/watch?v=ZX_IqKPT8LU'},
     {index: 4, src: artRooms4, title: 'artRooms4', description: '', url: 'https://www.youtube.com/watch?v=kGWT4pEnJtk'},
+]
+
+const fatherOrArtistImages = [
+    {index: 1, src: fatherOrArtist1, title: 'fatherOrArtist1', description: ''},
+    {index: 2, src: fatherOrArtist2, title: 'fatherOrArtist2', description: ''},
+    {index: 3, src: fatherOrArtist3, title: 'fatherOrArtist3', description: ''},
+    {index: 4, src: fatherOrArtist4, title: 'fatherOrArtist4', description: ''},
+    {index: 5, src: fatherOrArtist5, title: 'fatherOrArtist5', description: ''},
+    {index: 6, src: fatherOrArtist6, title: 'fatherOrArtist6', description: ''},
+    {index: 7, src: fatherOrArtist7, title: 'fatherOrArtist7', description: ''},
 ]
 
 const authouartImages = [
@@ -427,11 +489,13 @@ const imageProvider =
     (project) => {
         switch (project) {
             case 'nenette':
+                return nenetteImages
             case 'lake' :
                 return lakeImages
             case 'arch' :
                 return archImages
-            case 'aiff' :
+            case 'aif' :
+                return aifImages
             case 'blindDeads' :
                 return blindDeadsImages
             case 'crocodiles' :
@@ -452,7 +516,8 @@ const imageProvider =
                 return mediumsImages
             case 'artRooms' :
                 return artRoomsImages
-            case 'fatherOrArtist' :    
+            case 'fatherOrArtist' :   
+                return fatherOrArtistImages 
             case 'authouart' :
                 return authouartImages
             case 'playTime' :

@@ -10,7 +10,7 @@ import Crocodiles from "./Projects/Crocodiles";
 import WorryBirds from "./Projects/WorryBirds";
 import AgnesMelody from "./Projects/AgnesMelody";
 
-import Aiff from './Projects/Aiff'
+import Aif from './Projects/Aif'
 import BlindDeads from './Projects/BlindDeads'
 import EuropeForReal from "./Projects/EuropeForReal";
 import AfricanRhymes from "./Projects/AfricanRhymes";
@@ -41,10 +41,10 @@ function App() {
                            activeComponentId={activeComponentId}/>
             <div className='nav-area' ref={componentRefs[0]}/>
             <div ref={componentRefs[1]}>
-                <Nenette/>
+                <Arch/>
             </div>
             <div ref={componentRefs[2]}>
-                <Arch/>
+                <Nenette/>
             </div>
             <div ref={componentRefs[3]}>
                 <Crocodiles/>
@@ -59,35 +59,36 @@ function App() {
                 <AgnesMelody/>
             </div>
             <div ref={componentRefs[7]}>
-                <Aiff/>
-            </div>
-            <div ref={componentRefs[8]}>
-                <PostIt/>
-            </div>
-            <div ref={componentRefs[9]}>
-                <BlindDeads/>
-            </div>
-            <div ref={componentRefs[10]}>
-                <EuropeForReal/>
-            </div>
-            <div ref={componentRefs[11]}>
-                <AfricanRhymes/>
-            </div>
-            <div ref={componentRefs[12]}>
-                <TheHub/>
-            </div>
-            <div ref={componentRefs[13]}>
                 <FatherOrArtist/>
             </div>
-            <div ref={componentRefs[14]}>
+            <div ref={componentRefs[8]}>
                 <Authouart/>
             </div>
-            <div ref={componentRefs[15]}>
+            <div ref={componentRefs[9]}>
                 <ArtRooms/>
             </div>
-            <div ref={componentRefs[16]}>
+            <div ref={componentRefs[10]}>
                 <Mediums/>
             </div>
+            <div ref={componentRefs[11]}>
+                <Aif/>
+            </div>
+            <div ref={componentRefs[12]}>
+                <PostIt/>
+            </div>
+            <div ref={componentRefs[13]}>
+                <BlindDeads/>
+            </div>
+            <div ref={componentRefs[14]}>
+                <EuropeForReal/>
+            </div>
+            <div ref={componentRefs[15]}>
+                <AfricanRhymes/>
+            </div>
+            <div ref={componentRefs[16]}>
+                <TheHub/>
+            </div>
+            
             <div ref={componentRefs[17]}>
                 <PlayTime/>
             </div>

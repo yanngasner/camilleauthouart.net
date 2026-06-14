@@ -6,10 +6,8 @@ function FatherOrArtist() {
     const description = () => {
         return (
             <div>
-                <h3>Red Fish, mini documentaire, 7min...</h3>
-                <h3>Suivi d'une collection de 4 mini clips de 2min30, préparation de
-                    l’exposition Art Élysées, 2016.</h3>
-                <h3>Réalisation : Camille Authouart, 2014 et 2016</h3>
+                <h3>Réalisation d’un film de 52 minutes, mêlant documentaire et animation</h3>
+                <h3>Produit par Lux for Film et Amopix, diffusé sur FR3 Régions, 2026.</h3>
             </div>
         )
     }
@@ -17,8 +15,14 @@ function FatherOrArtist() {
     const paragraph = () => {
         return (
             <div>
-                <p>RED FISH: film réalisé en Mai 2014 dans le cadre de l'impression de la lithographie Red Fish de
-                    Daniel Authouart. Film réalisé à l’atelier de l’artiste, ainsi qu’à l’Atelier Stéphane Guilbaud.</p>
+                <p>Synopsis</p>
+                <br></br>
+                <p>Longtemps je me suis représenté mon père, le peintre Daniel Authouart, à la manière d’un personnage de Sempé : 
+                    un être doux, rêveur et un peu naïf. 
+                    Je sais désormais que c’est grâce à la pratique de son art qu’il est parvenu à canaliser ses névroses et à dominer une grande noirceur. 
+                    En décembre 2023 mon père est victime d’un avc. Depuis les médecins sont formels :
+                     il ne pourra plus jamais conduire mais avec la rééducation, il peut espérer lire de nouveau.</p>
+                <p>Et peindre se demande l’artiste ?</p>
             </div>
         );
     }
