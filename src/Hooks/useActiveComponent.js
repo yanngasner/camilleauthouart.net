@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import smoothscroll from 'smoothscroll-polyfill'
 
 function useActiveComponent() {
@@ -22,44 +22,37 @@ function useActiveComponent() {
     const ref16 = useRef(null)
     const ref17 = useRef(null)
     const ref18 = useRef(null)
-    const componentsRef = [ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18]
-    // const getComponentsRef = () => {
-        //cannot useRef in a loop, fixed implem for a predefined components count
-        //workaround not suitable : one ref per component needed
-        //const componentsRef = useRef([])
-        //componentsRef.current = new Array(activeComponentsCount)
-    // }
 
-    //provides the active component ref
+    const componentsRef = useMemo(() => [
+        ref0, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9,
+        ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    ], [])
+
     const [activeComponentId, setActiveComponentId] = useState(1)
-
-    //provides the offset of the sticky navbar;
     const [navOffset, setNavOffset] = useState(0)
 
-    smoothscroll.polyfill();
+    smoothscroll.polyfill()
 
-    //autoscroll to the selected component div
     const onSelectedComponentChanged = id => {
         if (componentsRef[id].current) {
-            let offsetTop = componentsRef[id].current.offsetTop;
+            let offsetTop = componentsRef[id].current.offsetTop
             offsetTop = offsetTop - navOffset
             window.scrollTo({ top: offsetTop, behavior: "smooth" })
         }
     }
 
-    useEffect( () => {
+    useEffect(() => {
         setNavOffset(componentsRef[0].current ? componentsRef[0].current.offsetHeight : 0)
     }, [componentsRef])
 
     useEffect(() => {
-        //on scroll, set the active component regarding the scroll position
         const handleScroll = (componentsRef, navOffset) => {
             for (var i = 1; i < componentsRef.length; i++) {
                 const refCurrent = componentsRef[i].current
-                if (!refCurrent)
-                    return
+                if (!refCurrent) return
                 var divMiddle = refCurrent.offsetTop + refCurrent.offsetHeight / 2
-                divMiddle = divMiddle - navOffset;
+                divMiddle = divMiddle - navOffset
                 if (window.scrollY <= divMiddle) {
                     setActiveComponentId(i)
                     return
@@ -68,19 +61,11 @@ function useActiveComponent() {
             setActiveComponentId(componentsRef.length)
         }
 
-        window.addEventListener('scroll', () => handleScroll(componentsRef, navOffset))
-
-        return () => {
-            window.removeEventListener('scroll', () => handleScroll(componentsRef, navOffset))
-        }
+        const handler = () => handleScroll(componentsRef, navOffset)
+        window.addEventListener('scroll', handler)
+        return () => window.removeEventListener('scroll', handler)
     }, [componentsRef, navOffset])
 
-
-
-    // return :
-    //- the refs to provide to the components div
-    //- the active component to be displayed in the navbar
-    //- the on selection component changed callback raised from the navbar
     return [componentsRef, activeComponentId, onSelectedComponentChanged]
 }
 
